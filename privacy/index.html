@@ -24,13 +24,14 @@
   <main class="legal">
     <div class="wrap">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: October 2, 2026</p>
+      <p class="updated">Last updated: October 4, 2026</p>
 
       <div class="summary-box">
         <p>The short version</p>
         <ul>
           <li>You don't need an account to use Nippon2Go.</li>
-          <li>Your trips, routes and checklist are stored only on your iPhone. We have no server and cannot see them.</li>
+          <li>Your trips, routes and checklist are stored only on your iPhone. We cannot see them.</li>
+          <li>Our only server gives the app the key for Google’s place cards and passes Google place and hotel requests on to Google. It doesn’t keep your trips or hotel searches.</li>
           <li>There are no ads, no analytics and no tracking, and we never sell your data.</li>
           <li>Some features use Apple and Google services, which handle data under their own privacy policies.</li>
         </ul>
@@ -46,20 +47,19 @@
         <li>Your packing checklist, including any items you add.</li>
         <li>Your preferences, such as app language and route pace.</li>
         <li>A record of which plans you have added to your calendar, so they aren't added twice.</li>
-        <li>If you use the place editor and choose a photo, a copy of that photo. Nippon2Go only receives the photo you pick and has no access to the rest of your photo library.</li>
       </ul>
       <p>This data is not sent to us or to anyone else. It is removed when you delete the app.</p>
 
       <h2>3. Optional sign-in</h2>
       <p>Signing in is optional, and the app works the same without it. Signing in does not create an account on any server of ours and does not upload your trips.</p>
       <h3>Sign in with Apple</h3>
-      <p>If you sign in with Apple, Apple gives the app a user identifier and, the first time only, your name and email address. You can choose to hide your email. This information is stored in your iPhone's secure Keychain and is used only to show that you are signed in. Signing out removes it from the device.</p>
+      <p>If you sign in with Apple, Apple gives the app a user identifier and, the first time only, your name and email address. You can choose to hide your email. This information is stored only in your iPhone's secure Keychain and is never sent to us. It is used to show that you are signed in. Because Apple shares your name and email only once, the app keeps them in the Keychain after you sign out, so it can show them again the next time you sign in with Apple. Like other Keychain data, they can stay on your iPhone after you delete the app, where only Nippon2Go can read them.</p>
       <h3>Sign in with Google</h3>
       <p>If you sign in with Google, Google's sign-in service gives the app your basic profile (name and email address). Google's software keeps your sign-in details in your iPhone's Keychain. We don't ask for access to any other Google services, such as Calendar or Drive. Google processes your sign-in under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
 
       <h2>4. Services that connect to the internet</h2>
       <h3>Google Places (place photos, details and hotel search)</h3>
-      <p>To show place photos, a place's details card and hotel search results, the app sends requests to Google Maps Platform. These include the place being viewed, or the hotel name you type and the city, plus your chosen language. Like any internet request, Google also receives technical information such as your IP address and device type. Google may collect information about how its software is used. This is described in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. Photos and place details are shown with Google's attributions and are not stored by the app.</p>
+      <p>To show place photos, the details of the hotel saved in your trip and hotel search results, the app sends requests to a small Nippon2Go server hosted on Google Cloud (region: Madrid, Spain), which passes them on to Google Maps Platform. These include the Google identifier of the place, or the hotel name you type and the city, plus your chosen language. The server doesn’t keep your trips or hotel searches. Google Cloud keeps standard technical logs of the requests our server receives (the time, your IP address, your device type and which Google place was requested) for up to 30 days, for security and to keep the service running. When the app starts, it also gets from our server the key that Google’s place details card needs, and keeps it only in memory. The place details card, the photos and their authors’ pictures are then loaded directly from Google, so Google also receives technical information such as your IP address and device type. Google may collect information about how its software is used. This is described in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. Photos and place details are shown with Google's attributions and are not stored by the app.</p>
       <h3>Apple Maps</h3>
       <p>Maps in the app are provided by Apple and are covered by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.</p>
       <h3>Links to other services</h3>
@@ -77,7 +77,7 @@
         <li>We don't use analytics, advertising or tracking tools.</li>
         <li>We don't track you across other companies' apps or websites.</li>
         <li>We don't sell, rent or share your personal data.</li>
-        <li>We don't run servers that store your information.</li>
+        <li>Our only server gives the app the key for Google’s place cards and passes Google place and hotel requests on to Google. It doesn’t keep your trips or hotel searches.</li>
       </ul>
 
       <h2>7. When you contact us</h2>
@@ -87,7 +87,7 @@
       <p>Nippon2Go is not directed at children under 13, and we do not knowingly collect personal data from children.</p>
 
       <h2>9. Your rights</h2>
-      <p>Because your trip data stays on your device, you are always in control of it: you can edit it in the app or remove it by deleting the app. To sign out, go to <strong>Profile → Account → Sign out</strong>. If you have contacted us by email, you can ask us to access, correct or delete that correspondence by writing to <a href="mailto:carlos@nippon2go.com">carlos@nippon2go.com</a>. Depending on where you live, you may also have the right to complain to your local data protection authority.</p>
+      <p>Because your trip data stays on your device, you are always in control of it: you can edit it in the app or remove it by deleting the app. To sign out, go to <strong>Profile → Account → Sign out</strong>. If you used Sign in with Apple, your name and email stay in your iPhone's Keychain after signing out (see section 3). If you have contacted us by email, you can ask us to access, correct or delete that correspondence by writing to <a href="mailto:carlos@nippon2go.com">carlos@nippon2go.com</a>. Depending on where you live, you may also have the right to complain to your local data protection authority.</p>
 
       <h2>10. Changes to this policy</h2>
       <p>If we change how Nippon2Go handles data, we will update this page and the date at the top.</p>
