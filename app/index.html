@@ -25,6 +25,7 @@
         document.head.appendChild(script);
     })();
   </script>
+  <script src="landing.js" data-page="app-es" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -46,11 +47,11 @@
           <p class="lead">Elige los sitios que quieres ver y la app te calcula cuántos días necesitas en cada ciudad y te monta una ruta para cada día, con mapa y trayectos a pie o en tren. Y un checklist para no olvidarte de nada antes de volar.</p>
           <!-- No target="_blank": inside TikTok's in-app browser a same-tab link hands off to the App Store more reliably. -->
           <div class="store-buttons">
-            <a class="store-button" href="https://apps.apple.com/app/apple-store/id6818258413?pt=129547332&amp;ct=tiktok-lachicadelpollo&amp;mt=8">
+            <a class="store-button" data-store="app_store" href="https://apps.apple.com/app/apple-store/id6818258413?pt=129547332&amp;ct=tiktok-lachicadelpollo&amp;mt=8">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1Zm-7 15a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
               <span><small>Descárgala gratis en la</small>App Store</span>
             </a>
-            <a class="store-button" href="https://play.google.com/store/apps/details?id=com.nippon2go.app&amp;referrer=utm_source%3Dtiktok%26utm_medium%3Dcreator%26utm_campaign%3Dapp-landing">
+            <a class="store-button" data-store="google_play" href="https://play.google.com/store/apps/details?id=com.nippon2go.app&amp;referrer=utm_source%3Dtiktok%26utm_medium%3Dcreator%26utm_campaign%3Dapp-landing">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M5 3.7v16.6c0 .8.9 1.3 1.6.9l13.8-8.3a1 1 0 0 0 0-1.8L6.6 2.8C5.9 2.4 5 2.9 5 3.7Z"/></svg>
               <span><small>Disponible en</small>Google Play</span>
             </a>
@@ -72,6 +73,7 @@
       <nav>
         <a href="../es/">nippon2go.com</a>
         <a href="../es/privacidad/">Privacidad</a>
+        <button type="button" class="link-button" data-consent-settings hidden>Cookies</button>
       </nav>
       <p class="note">Fotos y datos de los lugares proporcionados por Google.</p>
     </div>
