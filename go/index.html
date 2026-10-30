@@ -8,7 +8,8 @@
        /app/ landing page.
        Usage: nippon2go.com/go/?c=presentadora → App Store ct=ig-ad-presentadora, Play utm_campaign the same.
        c: up to 24 characters (a-z 0-9 -), one per promotion; Apple shows a campaign only from 5 first downloads.
-       Add &lang=en for an English ad. No cookies, no analytics, nothing sent anywhere; kept out of search. -->
+       Add &lang=en for an English ad. No cookies and no Google Analytics: like /app/, our own server only counts
+       each visit and store-button tap (page "go"); kept out of search. -->
   <meta name="robots" content="noindex">
   <script>
     // Sends a phone to its store as soon as the page has loaded; anything else just sees the buttons.
@@ -41,6 +42,24 @@
         return p === 'ios' ? l.appStore : p === 'android' ? l.play : null;
       }
       return { links: links, platform: platform, target: target };
+    })();
+    // The same anonymous count as /app/ (app/landing.js), sent with navigator.sendBeacon to our own server:
+    // no cookies and nothing saved on the device; the server logs only the page and the event, and refuses
+    // anything not sent from nippon2go.com, so a local copy of this page counts nothing.
+    (function () {
+      var COUNTER = 'https://nippon2go-places-820725286359.europe-southwest1.run.app/v1/web/event';
+      function count(event) {
+        if (!navigator.sendBeacon) return;
+        try {
+          navigator.sendBeacon(COUNTER + '?page=go&event=' + event);
+        } catch (e) {}
+      }
+      // Right away, before the redirect below: a beacon still goes out once the page has gone.
+      count('visit');
+      document.addEventListener('click', function (event) {
+        var link = event.target.closest && event.target.closest('a[data-store]');
+        if (link) count(link.getAttribute('data-store'));
+      });
     })();
     (function () {
       var url = N2G.target(location.search, navigator.userAgent || '', navigator.platform || '', navigator.maxTouchPoints || 0);
