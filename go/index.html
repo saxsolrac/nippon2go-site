@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nippon2Go – Descarga la app</title>
+  <!-- Link for paid ads: sends each phone straight to its store with the ad's own campaign tag, skipping the
+       /app/ landing page.
+       Usage: nippon2go.com/go/?c=presentadora → App Store ct=ig-ad-presentadora, Play utm_campaign the same.
+       c: up to 24 characters (a-z 0-9 -), one per promotion; Apple shows a campaign only from 5 first downloads.
+       Add &lang=en for an English ad. No cookies, no analytics, nothing sent anywhere; kept out of search. -->
+  <meta name="robots" content="noindex">
+  <script>
+    // Sends a phone to its store as soon as the page has loaded; anything else just sees the buttons.
+    var N2G = (function () {
+      function token(search) {
+        // 'ig-ad-' + c stays within the App Store's 30-character campaign-token limit.
+        var c = (new URLSearchParams(search).get('c') || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 24);
+        return c ? 'ig-ad-' + c : 'ig-ad';
+      }
+      function links(search) {
+        var params = new URLSearchParams(search);
+        var en = params.get('lang') === 'en';
+        var ct = token(search);
+        return {
+          en: en,
+          appStore: 'https://apps.apple.com/' + (en ? 'us' : 'es') + '/app/apple-store/id6818258413?pt=129547332&ct=' + ct + '&mt=8',
+          play: 'https://play.google.com/store/apps/details?id=com.nippon2go.app&referrer=' +
+            encodeURIComponent('utm_source=instagram&utm_medium=paid&utm_campaign=' + ct)
+        };
+      }
+      // iPadOS reports itself as a Mac, so a touch screen on "MacIntel" counts as iOS too.
+      function platform(ua, navPlatform, touchPoints) {
+        if (/iPhone|iPad|iPod/.test(ua) || (navPlatform === 'MacIntel' && touchPoints > 1)) return 'ios';
+        if (/Android/i.test(ua)) return 'android';
+        return 'other';
+      }
+      function target(search, ua, navPlatform, touchPoints) {
+        var l = links(search);
+        var p = platform(ua, navPlatform, touchPoints);
+        return p === 'ios' ? l.appStore : p === 'android' ? l.play : null;
+      }
+      return { links: links, platform: platform, target: target };
+    })();
+    (function () {
+      var url = N2G.target(location.search, navigator.userAgent || '', navigator.platform || '', navigator.maxTouchPoints || 0);
+      if (!url) return;
+      // Back from a store page that loaded inside an in-app browser: show the buttons instead of going there again.
+      var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+      if (nav && nav.type === 'back_forward') return;
+      // Go once the page has loaded, so this page stays in history and Back returns to its buttons.
+      window.addEventListener('load', function () {
+        setTimeout(function () { location.href = url; }, 0);
+      });
+    })();
+  </script>
+  <link rel="icon" type="image/png" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../es/"><img src="../icon.png" alt="" width="32" height="32">Nippon2Go</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <div class="hero-text">
+          <img class="hero-icon" src="../icon.png" alt="Icono de la app Nippon2Go" width="112" height="112">
+          <h1 data-text="title">Tu viaje a Japón, organizado.</h1>
+          <p class="lead" data-text="lead">Descarga Nippon2Go gratis en tu móvil:</p>
+          <!-- Same-tab links: inside Instagram's in-app browser they hand off to the store more reliably. -->
+          <div class="store-buttons" style="justify-content: center">
+            <a class="store-button" data-store="app_store" href="https://apps.apple.com/es/app/apple-store/id6818258413?pt=129547332&amp;ct=ig-ad&amp;mt=8">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1Zm-7 15a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+              <span><small data-text="appStoreSmall">Descárgala gratis en la</small>App Store</span>
+            </a>
+            <a class="store-button" data-store="google_play" href="https://play.google.com/store/apps/details?id=com.nippon2go.app&amp;referrer=utm_source%3Dinstagram%26utm_medium%3Dpaid%26utm_campaign%3Dig-ad">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M5 3.7v16.6c0 .8.9 1.3 1.6.9l13.8-8.3a1 1 0 0 0 0-1.8L6.6 2.8C5.9 2.4 5 2.9 5 3.7Z"/></svg>
+              <span><small data-text="playSmall">Disponible en</small>Google Play</span>
+            </a>
+          </div>
+          <p class="note" data-text="note">¿No se abre la tienda? Toca ··· arriba a la derecha y elige «Abrir en el navegador».</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Nippon2Go</span>
+      <nav>
+        <a href="../es/">nippon2go.com</a>
+        <a href="../es/privacidad/" data-text="privacy">Privacidad</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    // Shown only when the redirect didn't happen (a computer, or an in-app browser that blocked it):
+    // the buttons carry the same campaign tags, and the text follows lang=en.
+    (function () {
+      var l = N2G.links(location.search);
+      document.querySelector('[data-store="app_store"]').href = l.appStore;
+      document.querySelector('[data-store="google_play"]').href = l.play;
+      if (!l.en) return;
+      document.documentElement.lang = 'en';
+      document.title = 'Nippon2Go – Get the app';
+      document.querySelector('.hero-icon').alt = 'Nippon2Go app icon';
+      var text = {
+        title: 'Your Japan trip, organized.',
+        lead: 'Get Nippon2Go free on your phone:',
+        appStoreSmall: 'Download free on the',
+        playSmall: 'Get it on',
+        note: 'Store not opening? Tap ··· at the top right and choose “Open in browser”.',
+        privacy: 'Privacy'
+      };
+      document.querySelectorAll('[data-text]').forEach(function (el) {
+        el.textContent = text[el.getAttribute('data-text')];
+      });
+      document.querySelector('.brand').href = '../';
+      document.querySelector('[data-text="privacy"]').href = '../privacy/';
+      document.querySelector('.site-footer nav a').href = '../';
+    })();
+  </script>
+</body>
+</html>
