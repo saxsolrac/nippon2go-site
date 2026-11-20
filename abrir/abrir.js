@@ -28,6 +28,8 @@ var N2GLink = (function () {
 })();
 
 (function () {
+  // Also loaded by the site's 404.html, where only addresses under /abrir/ go to the store.
+  if (!/^\/abrir(\/|$)/i.test(location.pathname)) return;
   var l = N2GLink.links(location.pathname);
   var p = N2GLink.platform(navigator.userAgent || '', navigator.platform || '', navigator.maxTouchPoints || 0);
   var url = p === 'ios' ? l.appStore : p === 'android' ? l.play : null;

@@ -11,17 +11,5 @@
         "8F:73:B4:82:3A:D1:9D:8F:79:86:73:35:FE:AB:00:A3:33:88:A3:59:55:64:DA:7E:33:25:BE:A2:D3:A7:83:65"
       ]
     }
-  },
-  {
-    "relation": [
-      "delegate_permission/common.handle_all_urls"
-    ],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "com.nippon2go.app.debug",
-      "sha256_cert_fingerprints": [
-        "8E:2A:E5:9C:7A:FA:5D:56:98:81:51:11:95:30:07:08:A9:8D:42:63:B6:4A:69:D3:04:D6:1B:31:47:88:F5:9F"
-      ]
-    }
   }
 ]
