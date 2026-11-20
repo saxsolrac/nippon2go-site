@@ -1,0 +1,21 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "23BPM5NX62.com.nippon2go.app"
+        ],
+        "components": [
+          {
+            "/": "/abrir",
+            "comment": "nippon2go.com/abrir opens the app"
+          },
+          {
+            "/": "/abrir/*",
+            "comment": "Every app link: /abrir/checklist/, /abrir/rutas/kioto/…"
+          }
+        ]
+      }
+    ]
+  }
+}

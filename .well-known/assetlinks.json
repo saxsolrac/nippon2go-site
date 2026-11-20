@@ -1,0 +1,27 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.nippon2go.app",
+      "sha256_cert_fingerprints": [
+        "70:85:A3:B4:4A:E5:52:BB:5F:44:B6:3F:C9:59:04:19:50:64:15:34:D7:80:84:FC:B1:C8:0A:D5:EB:26:02:86",
+        "8F:73:B4:82:3A:D1:9D:8F:79:86:73:35:FE:AB:00:A3:33:88:A3:59:55:64:DA:7E:33:25:BE:A2:D3:A7:83:65"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.nippon2go.app.debug",
+      "sha256_cert_fingerprints": [
+        "8E:2A:E5:9C:7A:FA:5D:56:98:81:51:11:95:30:07:08:A9:8D:42:63:B6:4A:69:D3:04:D6:1B:31:47:88:F5:9F"
+      ]
+    }
+  }
+]
