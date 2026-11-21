@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://accounts.google.com/gsi/client; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style; frame-src https://accounts.google.com/gsi/; connect-src https://nippon2go-api-820725286359.europe-southwest1.run.app https://accounts.google.com/gsi/; img-src 'self' data: https://*.googleusercontent.com https://accounts.google.com; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>刪除你的 Nippon2Go 帳號 – Nippon2Go</title>
+  <meta name="description" content="不必開啟 App，就能刪除你的 Nippon2Go 帳號，以及我們伺服器上保存的資料。">
+  <link rel="canonical" href="https://nippon2go.com/zh-hant/delete-account/">
+  <link rel="alternate" hreflang="en" href="https://nippon2go.com/delete-account/">
+  <link rel="alternate" hreflang="es" href="https://nippon2go.com/es/borrar-cuenta/">
+  <link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/supprimer-compte/">
+  <link rel="alternate" hreflang="de" href="https://nippon2go.com/de/konto-loeschen/">
+  <link rel="alternate" hreflang="it" href="https://nippon2go.com/it/elimina-account/">
+  <link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/delete-account/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/delete-account/">
+  <link rel="alternate" hreflang="x-default" href="https://nippon2go.com/delete-account/">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="stylesheet" href="/style.css?v=20261121">
+  <script type="application/json" id="texts">{"hello": "你已用 Google 帳號登入。", "helloName": "你已用「%@」的身分登入。", "checking": "正在確認你的帳號…", "deleting": "正在刪除帳號…", "done": "帳號已刪除。你的 Nippon2Go 帳號及其資料已從我們的伺服器刪除。你的行程仍保存在你的手機上。", "noAccount": "這個 Google 帳號沒有 Nippon2Go 帳號，所以沒有需要刪除的資料。", "cancelled": "沒有刪除任何資料。", "errorNetwork": "無法刪除帳號。請檢查網路連線後再試一次。", "errorLater": "目前無法刪除帳號，請稍後再試。", "errorTooMany": "嘗試次數過多。請等一分鐘後再試。", "errorGoogle": "Google 無法確認你的帳號，請再試一次。", "signInAgain": "你的登入已失效。請再次用 Google 登入以刪除帳號。", "googleUnavailable": "無法載入 Google 登入。請關閉內容阻擋器，或改用其他瀏覽器。"}</script>
+  <script src="/delete-account/delete-account.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/zh-hant/"><img src="/icon.png" alt="" width="32" height="32">Nippon2Go</a>
+      <nav class="nav">
+        <a href="/zh-hant/#faq">常見問題</a>
+        <a class="hide-xs" href="/zh-hant/#support">客服</a>
+        <a class="hide-sm" href="/zh-hant/privacy/">隱私</a>
+        <details class="lang-menu">
+          <summary aria-label="語言"><span aria-hidden="true">🌐</span> 中文</summary>
+          <div class="lang-list">
+            <a href="/delete-account/" hreflang="en" lang="en">English</a>
+            <a href="/es/borrar-cuenta/" hreflang="es" lang="es">Español</a>
+            <a href="/fr/supprimer-compte/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/konto-loeschen/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/it/elimina-account/" hreflang="it" lang="it">Italiano</a>
+            <a href="/ko/delete-account/" hreflang="ko" lang="ko">한국어</a>
+            <a href="/zh-hant/delete-account/" hreflang="zh-Hant" lang="zh-Hant-TW" aria-current="page">繁體中文</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="wrap">
+      <h1>刪除你的 Nippon2Go 帳號</h1>
+      <p class="updated">如果你在 Nippon2Go App 中用 Google 登入，可以在這裡刪除帳號和我們伺服器上保存的資料，不必開啟 App。你也可以在 App 的<strong>個人檔案 → 帳號 → 刪除帳號</strong>中刪除。</p>
+
+      <section class="delete-card" aria-labelledby="google-heading">
+        <h2 id="google-heading">使用 Google 帳號</h2>
+        <p>請用你在 App 中使用的同一個 Google 帳號登入。刪除任何資料前，我們都會請你確認。</p>
+        <div id="google-button" class="google-button"></div>
+        <div id="confirm" class="delete-confirm" hidden>
+          <h3>要刪除你的帳號嗎？</h3>
+          <p id="confirm-hello"></p>
+          <p>你 Nippon2Go 帳號中的資料將被刪除，你也會退出所有共享行程。旅伴的行程仍屬於他們，你的行程仍保存在你的手機上。</p>
+          <div class="delete-actions">
+            <button id="delete-button" class="button danger" type="button">刪除帳號</button>
+            <button id="cancel-button" class="button secondary" type="button">取消</button>
+          </div>
+        </div>
+        <p id="status" class="delete-status" role="status" aria-live="polite" hidden></p>
+        <noscript><p class="delete-status error">這個頁面需要 JavaScript 才能用 Google 登入。你也可以在 App 的「個人檔案 → 帳號 → 刪除帳號」中刪除帳號。</p></noscript>
+      </section>
+
+      <h2>用 Apple 登入？</h2>
+      <p>請在 iPhone App 的<strong>個人檔案 → 帳號 → 刪除帳號</strong>中刪除帳號，Apple 會請你確認。如果你已經沒有這個 App，請重新安裝，用 Apple 登入後再刪除。如有任何疑問，請寫信到 <a href="mailto:carlos@nippon2go.com">carlos@nippon2go.com</a>。</p>
+
+      <h2>會刪除哪些資料</h2>
+      <ul>
+        <li><strong>立即刪除：</strong>你的帳號、名字、與 Google 或 Apple 帳號的連結、帳號中保存的行程備份，以及你建立的邀請。你的登入也會隨即失效。</li>
+        <li><strong>共享行程：</strong>你會退出所有共享行程。你新增的內容會留給其他人，但不再顯示你的名字，你在旅伴清單上的勾選也會移除。如果行程由你發起，會改由加入最久的人負責；如果沒有其他人，行程會被刪除。</li>
+        <li><strong>30 天內刪除：</strong>傳送到我們伺服器的請求技術記錄，以及你送出的變更記錄（只含隨機帳號編號）。</li>
+        <li><strong>不會刪除：</strong>保存在你手機上的行程，會一直保留到你刪除 App 為止。</li>
+      </ul>
+      <p>詳情請參閱我們的<a href="/zh-hant/privacy/#delete-account">隱私權政策</a>。</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Nippon2Go</span>
+      <nav>
+        <a href="/zh-hant/">首頁</a>
+        <a href="/zh-hant/#support">客服</a>
+        <a href="mailto:carlos@nippon2go.com">聯絡我們</a>
+        <a href="/delete-account/" hreflang="en" lang="en">English</a>
+        <a href="/es/borrar-cuenta/" hreflang="es" lang="es">Español</a>
+        <a href="/fr/supprimer-compte/" hreflang="fr" lang="fr">Français</a>
+        <a href="/de/konto-loeschen/" hreflang="de" lang="de">Deutsch</a>
+        <a href="/it/elimina-account/" hreflang="it" lang="it">Italiano</a>
+        <a href="/ko/delete-account/" hreflang="ko" lang="ko">한국어</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

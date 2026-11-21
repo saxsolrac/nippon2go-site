@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://accounts.google.com/gsi/client; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style; frame-src https://accounts.google.com/gsi/; connect-src https://nippon2go-api-820725286359.europe-southwest1.run.app https://accounts.google.com/gsi/; img-src 'self' data: https://*.googleusercontent.com https://accounts.google.com; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Supprimer ton compte Nippon2Go – Nippon2Go</title>
+  <meta name="description" content="Supprime ton compte Nippon2Go et les données que garde notre serveur, sans ouvrir l’app.">
+  <link rel="canonical" href="https://nippon2go.com/fr/supprimer-compte/">
+  <link rel="alternate" hreflang="en" href="https://nippon2go.com/delete-account/">
+  <link rel="alternate" hreflang="es" href="https://nippon2go.com/es/borrar-cuenta/">
+  <link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/supprimer-compte/">
+  <link rel="alternate" hreflang="de" href="https://nippon2go.com/de/konto-loeschen/">
+  <link rel="alternate" hreflang="it" href="https://nippon2go.com/it/elimina-account/">
+  <link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/delete-account/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/delete-account/">
+  <link rel="alternate" hreflang="x-default" href="https://nippon2go.com/delete-account/">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="stylesheet" href="/style.css?v=20261121">
+  <script type="application/json" id="texts">{"hello": "Tu es connecté avec ton compte Google.", "helloName": "Tu es connecté en tant que %@.", "checking": "Vérification de ton compte…", "deleting": "Suppression du compte…", "done": "Compte supprimé. Ton compte Nippon2Go et ses données ont été supprimés de notre serveur. Tes voyages restent sur tes téléphones.", "noAccount": "Ce compte Google n’avait aucun compte Nippon2Go : il n’y avait rien à supprimer.", "cancelled": "Rien n’a été supprimé.", "errorNetwork": "Impossible de supprimer le compte. Vérifie ta connexion et réessaie.", "errorLater": "Le compte ne peut pas être supprimé pour le moment. Réessaie plus tard.", "errorTooMany": "Trop de tentatives. Attends une minute et réessaie.", "errorGoogle": "Google n’a pas pu confirmer ton compte. Réessaie.", "signInAgain": "Ta session a pris fin. Reconnecte-toi avec Google pour supprimer le compte.", "googleUnavailable": "Impossible de charger la connexion Google. Désactive ton bloqueur de contenu ou essaie un autre navigateur."}</script>
+  <script src="/delete-account/delete-account.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/fr/"><img src="/icon.png" alt="" width="32" height="32">Nippon2Go</a>
+      <nav class="nav">
+        <a href="/fr/#faq">FAQ</a>
+        <a class="hide-xs" href="/fr/#support">Aide</a>
+        <a class="hide-sm" href="/fr/confidentialite/">Confidentialité</a>
+        <details class="lang-menu">
+          <summary aria-label="Langue"><span aria-hidden="true">🌐</span> FR</summary>
+          <div class="lang-list">
+            <a href="/delete-account/" hreflang="en" lang="en">English</a>
+            <a href="/es/borrar-cuenta/" hreflang="es" lang="es">Español</a>
+            <a href="/fr/supprimer-compte/" hreflang="fr" lang="fr" aria-current="page">Français</a>
+            <a href="/de/konto-loeschen/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/it/elimina-account/" hreflang="it" lang="it">Italiano</a>
+            <a href="/ko/delete-account/" hreflang="ko" lang="ko">한국어</a>
+            <a href="/zh-hant/delete-account/" hreflang="zh-Hant" lang="zh-Hant-TW">繁體中文</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="wrap">
+      <h1>Supprimer ton compte Nippon2Go</h1>
+      <p class="updated">Si tu t’es connecté à l’app Nippon2Go avec Google, tu peux supprimer ici ton compte et les données que garde notre serveur, sans ouvrir l’app. Dans l’app, tu peux aussi le faire dans <strong>Profil → Compte → Supprimer le compte</strong>.</p>
+
+      <section class="delete-card" aria-labelledby="google-heading">
+        <h2 id="google-heading">Avec un compte Google</h2>
+        <p>Connecte-toi avec le même compte Google que dans l’app. Nous te demandons de confirmer avant de supprimer quoi que ce soit.</p>
+        <div id="google-button" class="google-button"></div>
+        <div id="confirm" class="delete-confirm" hidden>
+          <h3>Supprimer ton compte ?</h3>
+          <p id="confirm-hello"></p>
+          <p>Les données de ton compte Nippon2Go seront supprimées et tu quitteras tes voyages partagés. Les voyages de tes compagnons restent les leurs, et tes voyages restent sur tes téléphones.</p>
+          <div class="delete-actions">
+            <button id="delete-button" class="button danger" type="button">Supprimer le compte</button>
+            <button id="cancel-button" class="button secondary" type="button">Annuler</button>
+          </div>
+        </div>
+        <p id="status" class="delete-status" role="status" aria-live="polite" hidden></p>
+        <noscript><p class="delete-status error">Cette page a besoin de JavaScript pour se connecter avec Google. Tu peux aussi supprimer ton compte dans l’app, dans Profil → Compte → Supprimer le compte.</p></noscript>
+      </section>
+
+      <h2>Connecté avec Apple ?</h2>
+      <p>Supprime le compte dans l’app iPhone, dans <strong>Profil → Compte → Supprimer le compte</strong> : Apple te demandera de confirmer. Si tu n’as plus l’app, réinstalle-la, connecte-toi avec Apple et supprime-le depuis l’app. Pour toute question, écris-nous à <a href="mailto:carlos@nippon2go.com">carlos@nippon2go.com</a>.</p>
+
+      <h2>Ce qui est supprimé</h2>
+      <ul>
+        <li><strong>Immédiatement :</strong> ton compte, ton prénom, le lien avec ton compte Google ou Apple, la sauvegarde de ton voyage enregistrée dans ton compte et les invitations que tu as créées. Tes sessions cessent de fonctionner.</li>
+        <li><strong>Voyages partagés :</strong> tu les quittes tous. Ce que tu as ajouté reste pour les autres, sans ton nom, et tes coches dans la liste du groupe sont retirées. Si tu organisais un voyage, la personne qui y est depuis le plus longtemps devient l’organisatrice ; s’il ne reste personne, le voyage est supprimé.</li>
+        <li><strong>Sous 30 jours :</strong> les journaux techniques des requêtes envoyées à notre serveur et les traces des modifications que tu as envoyées, qui ne portent qu’un numéro de compte aléatoire.</li>
+        <li><strong>Pas supprimé :</strong> les voyages enregistrés sur tes téléphones, qui y restent jusqu’à ce que tu supprimes l’app.</li>
+      </ul>
+      <p>Plus de détails dans notre <a href="/fr/confidentialite/#delete-account">politique de confidentialité</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Nippon2Go</span>
+      <nav>
+        <a href="/fr/">Accueil</a>
+        <a href="/fr/#support">Aide</a>
+        <a href="mailto:carlos@nippon2go.com">Contact</a>
+        <a href="/delete-account/" hreflang="en" lang="en">English</a>
+        <a href="/es/borrar-cuenta/" hreflang="es" lang="es">Español</a>
+        <a href="/de/konto-loeschen/" hreflang="de" lang="de">Deutsch</a>
+        <a href="/it/elimina-account/" hreflang="it" lang="it">Italiano</a>
+        <a href="/ko/delete-account/" hreflang="ko" lang="ko">한국어</a>
+        <a href="/zh-hant/delete-account/" hreflang="zh-Hant" lang="zh-Hant-TW">繁體中文</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

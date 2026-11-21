@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://accounts.google.com/gsi/client; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style; frame-src https://accounts.google.com/gsi/; connect-src https://nippon2go-api-820725286359.europe-southwest1.run.app https://accounts.google.com/gsi/; img-src 'self' data: https://*.googleusercontent.com https://accounts.google.com; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Nippon2Go 계정 삭제 – Nippon2Go</title>
+  <meta name="description" content="앱을 열지 않고 Nippon2Go 계정과 서버에 저장된 데이터를 삭제할 수 있습니다.">
+  <link rel="canonical" href="https://nippon2go.com/ko/delete-account/">
+  <link rel="alternate" hreflang="en" href="https://nippon2go.com/delete-account/">
+  <link rel="alternate" hreflang="es" href="https://nippon2go.com/es/borrar-cuenta/">
+  <link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/supprimer-compte/">
+  <link rel="alternate" hreflang="de" href="https://nippon2go.com/de/konto-loeschen/">
+  <link rel="alternate" hreflang="it" href="https://nippon2go.com/it/elimina-account/">
+  <link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/delete-account/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/delete-account/">
+  <link rel="alternate" hreflang="x-default" href="https://nippon2go.com/delete-account/">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="stylesheet" href="/style.css?v=20261121">
+  <script type="application/json" id="texts">{"hello": "Google 계정으로 로그인했습니다.", "helloName": "%@ 님으로 로그인했습니다.", "checking": "계정을 확인하는 중…", "deleting": "계정을 삭제하는 중…", "done": "계정이 삭제되었습니다. Nippon2Go 계정과 그 데이터가 서버에서 삭제되었습니다. 여행은 휴대폰에 그대로 남아 있습니다.", "noAccount": "이 Google 계정에는 Nippon2Go 계정이 없어서 삭제할 것이 없습니다.", "cancelled": "아무것도 삭제되지 않았습니다.", "errorNetwork": "계정을 삭제하지 못했습니다. 인터넷 연결을 확인하고 다시 시도하세요.", "errorLater": "지금은 계정을 삭제할 수 없습니다. 나중에 다시 시도하세요.", "errorTooMany": "시도 횟수가 너무 많습니다. 1분 후에 다시 시도하세요.", "errorGoogle": "Google에서 계정을 확인하지 못했습니다. 다시 시도하세요.", "signInAgain": "세션이 종료되었습니다. 계정을 삭제하려면 Google로 다시 로그인하세요.", "googleUnavailable": "Google 로그인을 불러오지 못했습니다. 콘텐츠 차단기를 끄거나 다른 브라우저에서 시도하세요."}</script>
+  <script src="/delete-account/delete-account.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/ko/"><img src="/icon.png" alt="" width="32" height="32">Nippon2Go</a>
+      <nav class="nav">
+        <a href="/ko/#faq">자주 묻는 질문</a>
+        <a class="hide-xs" href="/ko/#support">고객 지원</a>
+        <a class="hide-sm" href="/ko/privacy/">개인정보 보호</a>
+        <details class="lang-menu">
+          <summary aria-label="언어"><span aria-hidden="true">🌐</span> KO</summary>
+          <div class="lang-list">
+            <a href="/delete-account/" hreflang="en" lang="en">English</a>
+            <a href="/es/borrar-cuenta/" hreflang="es" lang="es">Español</a>
+            <a href="/fr/supprimer-compte/" hreflang="fr" lang="fr">Français</a>
+            <a href="/de/konto-loeschen/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/it/elimina-account/" hreflang="it" lang="it">Italiano</a>
+            <a href="/ko/delete-account/" hreflang="ko" lang="ko" aria-current="page">한국어</a>
+            <a href="/zh-hant/delete-account/" hreflang="zh-Hant" lang="zh-Hant-TW">繁體中文</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="wrap">
+      <h1>Nippon2Go 계정 삭제</h1>
+      <p class="updated">Nippon2Go 앱에 Google로 로그인했다면, 앱을 열지 않고 여기에서 계정과 서버에 저장된 데이터를 삭제할 수 있습니다. 앱의 <strong>프로필 → 계정 → 계정 삭제</strong>에서도 삭제할 수 있습니다.</p>
+
+      <section class="delete-card" aria-labelledby="google-heading">
+        <h2 id="google-heading">Google 계정으로 로그인한 경우</h2>
+        <p>앱에서 사용하는 것과 같은 Google 계정으로 로그인하세요. 삭제하기 전에 한 번 더 확인을 요청합니다.</p>
+        <div id="google-button" class="google-button"></div>
+        <div id="confirm" class="delete-confirm" hidden>
+          <h3>계정을 삭제할까요?</h3>
+          <p id="confirm-hello"></p>
+          <p>Nippon2Go 계정의 데이터가 삭제되고 공유 여행에서 나가게 됩니다. 함께 여행하는 사람들의 여행은 그대로 남고, 내 여행은 휴대폰에 그대로 저장되어 있습니다.</p>
+          <div class="delete-actions">
+            <button id="delete-button" class="button danger" type="button">계정 삭제</button>
+            <button id="cancel-button" class="button secondary" type="button">취소</button>
+          </div>
+        </div>
+        <p id="status" class="delete-status" role="status" aria-live="polite" hidden></p>
+        <noscript><p class="delete-status error">이 페이지에서 Google로 로그인하려면 JavaScript가 필요합니다. 앱의 프로필 → 계정 → 계정 삭제에서도 계정을 삭제할 수 있습니다.</p></noscript>
+      </section>
+
+      <h2>Apple로 로그인했나요?</h2>
+      <p>iPhone 앱의 <strong>프로필 → 계정 → 계정 삭제</strong>에서 계정을 삭제하세요. Apple에서 확인을 요청합니다. 앱이 더 이상 없다면 다시 설치한 뒤 Apple로 로그인해서 삭제하세요. 궁금한 점은 <a href="mailto:carlos@nippon2go.com">carlos@nippon2go.com</a>로 문의하세요.</p>
+
+      <h2>삭제되는 항목</h2>
+      <ul>
+        <li><strong>즉시:</strong> 계정, 이름, Google 또는 Apple 계정과의 연결, 계정에 저장된 여행 백업, 내가 만든 초대가 삭제됩니다. 세션도 더 이상 작동하지 않습니다.</li>
+        <li><strong>공유 여행:</strong> 모든 공유 여행에서 나가게 됩니다. 내가 추가한 항목은 내 이름 없이 다른 사람들에게 남고, 그룹 준비물 목록의 내 체크 표시는 삭제됩니다. 내가 여행을 주최했다면 가장 오래 참여한 사람이 주최자가 되고, 남은 사람이 없으면 여행이 삭제됩니다.</li>
+        <li><strong>30일 이내:</strong> 서버로 보낸 요청의 기술 로그와, 무작위 계정 번호만 담긴 내가 보낸 변경 사항의 기록이 삭제됩니다.</li>
+        <li><strong>삭제되지 않는 항목:</strong> 휴대폰에 저장된 여행은 앱을 삭제할 때까지 그대로 남아 있습니다.</li>
+      </ul>
+      <p>자세한 내용은 <a href="/ko/privacy/#delete-account">개인정보 처리방침</a>을 참고하세요.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Nippon2Go</span>
+      <nav>
+        <a href="/ko/">홈</a>
+        <a href="/ko/#support">고객 지원</a>
+        <a href="mailto:carlos@nippon2go.com">문의</a>
+        <a href="/delete-account/" hreflang="en" lang="en">English</a>
+        <a href="/es/borrar-cuenta/" hreflang="es" lang="es">Español</a>
+        <a href="/fr/supprimer-compte/" hreflang="fr" lang="fr">Français</a>
+        <a href="/de/konto-loeschen/" hreflang="de" lang="de">Deutsch</a>
+        <a href="/it/elimina-account/" hreflang="it" lang="it">Italiano</a>
+        <a href="/zh-hant/delete-account/" hreflang="zh-Hant" lang="zh-Hant-TW">繁體中文</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
