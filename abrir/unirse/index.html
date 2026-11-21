@@ -9,10 +9,11 @@
        invitation (GET /v1/invites/{code} on nippon2go-api, the only data: the organizer's first name, the trip's title,
        dates and cities) and the big code to paste on an iPhone after installing; Google Play gets the code as its
        install referrer (invite=CODE), so Android opens the invitation by itself. The code stays in the fragment, so it
-       never reaches this site's server. No redirect, no cookies, nothing counted; kept out of search. -->
+       never reaches this site's server. In the app's 7 languages, from the browser's language (Spanish without
+       JavaScript). No redirect, no cookies, nothing counted; kept out of search. -->
   <meta name="robots" content="noindex">
   <meta name="description" content="Te han invitado a un viaje a Japón en Nippon2Go.">
-  <meta property="og:title" content="Te invitan a un viaje a Japón">
+  <meta property="og:title" content="Te invitan a un viaje a Japón · Nippon2Go">
   <meta property="og:description" content="Abre la invitación en Nippon2Go.">
   <meta property="og:image" content="https://nippon2go.com/og-image.png">
   <meta property="og:type" content="website">
@@ -40,7 +41,7 @@
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/es/" data-en-href="/"><img src="/icon.png" alt="" width="32" height="32">Nippon2Go</a>
+      <a class="brand" id="home-link" href="/es/"><img src="/icon.png" alt="" width="32" height="32">Nippon2Go</a>
     </div>
   </header>
 
@@ -48,8 +49,8 @@
     <div class="hero">
       <div class="wrap">
         <div class="hero-text">
-          <img class="hero-icon" src="/icon.png" alt="Icono de la app Nippon2Go" data-en-alt="Nippon2Go app icon" width="96" height="96">
-          <h1 id="title" data-en="You're invited to a trip to Japan">Te invitan a un viaje a Japón</h1>
+          <img class="hero-icon" id="icon" src="/icon.png" alt="Icono de la app Nippon2Go" width="96" height="96">
+          <h1 id="title">Te invitan a un viaje a Japón</h1>
 
           <div class="invite-card" id="card" hidden>
             <h2 id="trip-title"></h2>
@@ -59,24 +60,24 @@
           </div>
           <p class="invite-error" id="error" hidden></p>
 
-          <p class="lead" data-en="Get Nippon2Go, free, to see and plan the trip together:">Descarga Nippon2Go gratis para ver y planear el viaje juntos:</p>
+          <p class="lead" id="lead">Descarga Nippon2Go gratis para ver y planear el viaje juntos:</p>
           <div class="store-buttons" style="justify-content: center">
             <a class="store-button" data-store="app_store" href="https://apps.apple.com/app/apple-store/id6818258413?pt=129547332&amp;ct=abrir-unirse&amp;mt=8">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1Zm-7 15a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
-              <span><small data-en="Download free on the">Descárgala gratis en la</small>App Store</span>
+              <span><small id="app-store-small">Descárgala gratis en la</small>App Store</span>
             </a>
             <a class="store-button" data-store="google_play" href="https://play.google.com/store/apps/details?id=com.nippon2go.app">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M5 3.7v16.6c0 .8.9 1.3 1.6.9l13.8-8.3a1 1 0 0 0 0-1.8L6.6 2.8C5.9 2.4 5 2.9 5 3.7Z"/></svg>
-              <span><small data-en="Get it on">Disponible en</small>Google Play</span>
+              <span><small id="play-small">Disponible en</small>Google Play</span>
             </a>
           </div>
 
           <div class="code-box" id="code-box" hidden>
-            <p data-en="Have an iPhone? Once it's installed, open Nippon2Go and paste this code in Mi viaje › Compañeros › I have an invitation:">¿Tienes iPhone? Cuando la tengas, abre Nippon2Go y pega este código en Mi viaje › Compañeros › Tengo una invitación:</p>
+            <p id="code-text">¿Tienes iPhone? Cuando la tengas, abre Nippon2Go y pega este código en Mi viaje › Compañeros › Tengo una invitación:</p>
             <div class="code" id="code"></div>
-            <button class="copy" id="copy" type="button" data-en="Copy code">Copiar código</button>
+            <button class="copy" id="copy" type="button">Copiar código</button>
           </div>
-          <p class="note" data-en="Already have the app? Open it and paste the code, or open this link from Safari or Chrome instead of Instagram or WhatsApp.">¿Ya tienes la app? Ábrela y pega el código, o abre este enlace en Safari o Chrome en lugar de en Instagram o WhatsApp.</p>
+          <p class="note" id="note">¿Ya tienes la app? Ábrela y pega el código, o abre este enlace en Safari o Chrome en lugar de en Instagram o WhatsApp.</p>
         </div>
       </div>
     </div>
@@ -86,8 +87,8 @@
     <div class="wrap">
       <span>© 2026 Nippon2Go</span>
       <nav>
-        <a href="/es/" data-en-href="/">nippon2go.com</a>
-        <a href="/es/privacidad/" data-en-href="/privacy/" data-en="Privacy">Privacidad</a>
+        <a id="footer-home" href="/es/">nippon2go.com</a>
+        <a id="privacy" href="/es/privacidad/">Privacidad</a>
       </nav>
     </div>
   </footer>
@@ -96,18 +97,107 @@
   (function () {
     var API = 'https://nippon2go-api-820725286359.europe-southwest1.run.app';
     var ALPHABET = /^[ABCDEFGHJKLMNPQRSTUVWXYZ23456789]{8}$/;
-    var english = !/^es\b/i.test(navigator.language || '');
-    var locale = english ? (navigator.language || 'en') : 'es-ES';
-    function t(es, en) { return english ? en : es; }
-    function $(id) { return document.getElementById(id); }
 
-    if (english) {
-      document.documentElement.lang = 'en';
-      document.querySelectorAll('[data-en]').forEach(function (el) { el.textContent = el.getAttribute('data-en'); });
-      document.querySelectorAll('[data-en-href]').forEach(function (el) { el.href = el.getAttribute('data-en-href'); });
-      document.querySelectorAll('[data-en-alt]').forEach(function (el) { el.alt = el.getAttribute('data-en-alt'); });
-      document.title = "You're invited · Nippon2Go";
+    // The app's 7 languages; the screen names are the app's own (Mi viaje › Compañeros › Tengo una invitación).
+    // French uses «tu», like the app, and a no-break space before : ? !
+    var TEXT = {
+      es: { locale: 'es-ES', page: 'Únete al viaje', alt: 'Icono de la app Nippon2Go', invited: 'Te invitan a un viaje a Japón',
+        named: '{name} te invita a su viaje a Japón', lead: 'Descarga Nippon2Go gratis para ver y planear el viaje juntos:',
+        appStore: 'Descárgala gratis en la', play: 'Disponible en',
+        codeText: '¿Tienes iPhone? Cuando la tengas, abre Nippon2Go y pega este código en Mi viaje › Compañeros › Tengo una invitación:',
+        copy: 'Copiar código', copied: 'Código copiado',
+        note: '¿Ya tienes la app? Ábrela y pega el código, o abre este enlace en Safari o Chrome en lugar de en Instagram o WhatsApp.',
+        noCode: 'Este enlace no lleva ninguna invitación. Pide que te lo envíen otra vez.',
+        notFound: 'Esta invitación no existe. Revisa el enlace o pide otro.', gone: 'Esta invitación ha caducado o se ha anulado. Pide otra.',
+        day: '1 día', days: '{n} días', person: '1 persona en el viaje', people: '{n} personas en el viaje', privacy: 'Privacidad' },
+      en: { locale: 'en-GB', page: 'Join the trip', alt: 'Nippon2Go app icon', invited: "You're invited to a trip to Japan",
+        named: '{name} invites you to their trip to Japan', lead: 'Get Nippon2Go, free, to see and plan the trip together:',
+        appStore: 'Download free on the', play: 'Get it on',
+        codeText: 'Have an iPhone? Once you have the app, open Nippon2Go and paste this code in My trip › Travel companions › I have an invitation:',
+        copy: 'Copy code', copied: 'Code copied',
+        note: 'Already have the app? Open it and paste the code, or open this link in Safari or Chrome instead of Instagram or WhatsApp.',
+        noCode: 'This link has no invitation in it. Ask for it to be sent again.',
+        notFound: "This invitation doesn't exist. Check the link or ask for a new one.", gone: 'This invitation has expired or was cancelled. Ask for a new one.',
+        day: '1 day', days: '{n} days', person: '1 person on the trip', people: '{n} people on the trip', privacy: 'Privacy' },
+      fr: { locale: 'fr-FR', page: 'Rejoins le voyage', alt: 'Icône de l’app Nippon2Go', invited: 'Tu es invité à un voyage au Japon',
+        named: '{name} t’invite à son voyage au Japon', lead: 'Télécharge Nippon2Go gratuitement pour voir et préparer le voyage ensemble :',
+        appStore: 'Télécharge-la gratuitement sur l’', play: 'Disponible sur',
+        codeText: 'Tu as un iPhone ? Une fois l’app installée, ouvre Nippon2Go et colle ce code dans Mon voyage › Compagnons de voyage › J’ai une invitation :',
+        copy: 'Copier le code', copied: 'Code copié',
+        note: 'Tu as déjà l’app ? Ouvre-la et colle le code, ou ouvre ce lien dans Safari ou Chrome plutôt que dans Instagram ou WhatsApp.',
+        noCode: 'Ce lien ne contient aucune invitation. Demande qu’on te le renvoie.',
+        notFound: 'Cette invitation n’existe pas. Vérifie le lien ou demandes-en un autre.', gone: 'Cette invitation a expiré ou a été annulée. Demandes-en une autre.',
+        day: '1 jour', days: '{n} jours', person: '1 personne dans le voyage', people: '{n} personnes dans le voyage', privacy: 'Confidentialité' },
+      de: { locale: 'de-DE', page: 'Der Reise beitreten', alt: 'Nippon2Go-App-Symbol', invited: 'Du bist zu einer Japanreise eingeladen',
+        named: '{name} lädt dich zu einer Japanreise ein', lead: 'Lade Nippon2Go kostenlos, um die Reise gemeinsam zu sehen und zu planen:',
+        appStore: 'Kostenlos laden im', play: 'Jetzt bei',
+        codeText: 'Du hast ein iPhone? Sobald du die App hast, öffne Nippon2Go und füge diesen Code unter Meine Reise › Mitreisende › Ich habe eine Einladung ein:',
+        copy: 'Code kopieren', copied: 'Code kopiert',
+        note: 'Du hast die App schon? Öffne sie und füge den Code ein, oder öffne diesen Link in Safari oder Chrome statt in Instagram oder WhatsApp.',
+        noCode: 'Dieser Link enthält keine Einladung. Bitte darum, ihn noch einmal zu schicken.',
+        notFound: 'Diese Einladung gibt es nicht. Prüfe den Link oder bitte um einen neuen.', gone: 'Diese Einladung ist abgelaufen oder wurde deaktiviert. Bitte um eine neue.',
+        day: '1 Tag', days: '{n} Tage', person: '1 Person auf der Reise', people: '{n} Personen auf der Reise', privacy: 'Datenschutz' },
+      it: { locale: 'it-IT', page: 'Unisciti al viaggio', alt: 'Icona dell’app Nippon2Go', invited: 'Sei invitato a un viaggio in Giappone',
+        named: '{name} ti invita al suo viaggio in Giappone', lead: 'Scarica Nippon2Go gratis per vedere e pianificare il viaggio insieme:',
+        appStore: 'Scaricala gratis su', play: 'Disponibile su',
+        codeText: 'Hai un iPhone? Quando avrai l’app, apri Nippon2Go e incolla questo codice in Il mio viaggio › Compagni di viaggio › Ho un invito:',
+        copy: 'Copia codice', copied: 'Codice copiato',
+        note: 'Hai già l’app? Aprila e incolla il codice, oppure apri questo link in Safari o Chrome invece che in Instagram o WhatsApp.',
+        noCode: 'Questo link non contiene nessun invito. Chiedi che te lo rimandino.',
+        notFound: 'Questo invito non esiste. Controlla il link o chiedine un altro.', gone: 'Questo invito è scaduto o è stato annullato. Chiedine un altro.',
+        day: '1 giorno', days: '{n} giorni', person: '1 persona nel viaggio', people: '{n} persone nel viaggio', privacy: 'Privacy' },
+      ko: { locale: 'ko-KR', page: '여행 참여', alt: 'Nippon2Go 앱 아이콘', invited: '일본 여행에 초대받았습니다',
+        named: '{name} 님이 일본 여행에 초대했습니다', lead: 'Nippon2Go를 무료로 받아 함께 여행을 보고 계획하세요.',
+        appStore: '무료로 다운로드', play: '다운로드',
+        codeText: 'iPhone을 사용하시나요? 앱을 설치한 뒤 Nippon2Go를 열고 나의 여행 › 동행 › 초대를 받았어요에 이 코드를 붙여 넣으세요.',
+        copy: '코드 복사', copied: '코드를 복사했습니다',
+        note: '이미 앱이 있나요? 앱을 열고 코드를 붙여 넣거나, Instagram이나 WhatsApp 대신 Safari 또는 Chrome에서 이 링크를 여세요.',
+        noCode: '이 링크에는 초대가 없습니다. 다시 보내 달라고 요청하세요.',
+        notFound: '없는 초대입니다. 링크를 확인하거나 새 초대를 요청하세요.', gone: '만료되었거나 취소된 초대입니다. 새 초대를 요청하세요.',
+        day: '1일', days: '{n}일', person: '여행 인원 1명', people: '여행 인원 {n}명', privacy: '개인정보 보호' },
+      zh: { locale: 'zh-Hant-TW', page: '加入行程', alt: 'Nippon2Go App 圖示', invited: '你受邀參加一趟日本之旅',
+        named: '{name}邀請你參加日本之旅', lead: '免費下載 Nippon2Go，一起查看和規劃行程：',
+        appStore: '免費下載於', play: '立即下載',
+        codeText: '使用 iPhone 嗎？安裝 App 後，打開 Nippon2Go，在「我的旅程 › 旅伴 › 我收到邀請」貼上這個代碼：',
+        copy: '複製代碼', copied: '已複製代碼',
+        note: '已經有 App 了嗎？打開 App 貼上代碼，或用 Safari 或 Chrome 開啟這個連結，不要在 Instagram 或 WhatsApp 裡開啟。',
+        noCode: '這個連結裡沒有邀請，請對方再傳一次。',
+        notFound: '找不到這個邀請，請檢查連結或再索取一個。', gone: '這個邀請已到期或已取消，請再索取一個。',
+        day: '1 天', days: '{n} 天', person: '行程有 1 人', people: '行程有 {n} 人', privacy: '隱私' }
+    };
+    // The cities as the app names them in each language (the trip stores the Spanish canonical names).
+    var CITIES = {
+      Tokio: { en: 'Tokyo', fr: 'Tokyo', it: 'Tokyo', ko: '도쿄', zh: '東京' },
+      Kyoto: { ko: '교토', zh: '京都' }, Osaka: { ko: '오사카', zh: '大阪' }, Nara: { ko: '나라', zh: '奈良' },
+      Hiroshima: { ko: '히로시마', zh: '廣島' }, Kamakura: { ko: '가마쿠라', zh: '鎌倉' }, Yokohama: { ko: '요코하마', zh: '橫濱' }
+    };
+    function language() {
+      var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
+      for (var i = 0; i < list.length; i++) {
+        var code = String(list[i]).toLowerCase().split('-')[0];
+        if (TEXT[code]) return code;
+      }
+      return 'en';
     }
+    var lang = language();
+    var T = TEXT[lang];
+    function $(id) { return document.getElementById(id); }
+    function fill(text, values) { return text.replace(/\{(\w+)\}/g, function (_, key) { return values[key]; }); }
+
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hant-TW' : lang;
+    document.title = T.page + ' · Nippon2Go';
+    $('icon').alt = T.alt;
+    $('title').textContent = T.invited;
+    $('lead').textContent = T.lead;
+    $('app-store-small').textContent = T.appStore;
+    $('play-small').textContent = T.play;
+    $('code-text').textContent = T.codeText;
+    $('copy').textContent = T.copy;
+    $('note').textContent = T.note;
+    $('privacy').textContent = T.privacy;
+    // The site has Spanish (/es/) and English pages; everyone else gets the English ones.
+    $('home-link').href = $('footer-home').href = lang === 'es' ? '/es/' : '/';
+    $('privacy').href = lang === 'es' ? '/es/privacidad/' : '/privacy/';
 
     function showError(text) {
       $('error').textContent = text;
@@ -116,8 +206,7 @@
 
     var code = decodeURIComponent((location.hash || '').slice(1)).toUpperCase().replace(/[\s-]/g, '');
     if (!ALPHABET.test(code)) {
-      showError(t('Este enlace no lleva ninguna invitación. Pide que te lo envíen otra vez.',
-                  'This link has no invitation in it. Ask for it to be sent again.'));
+      showError(T.noCode);
       return;
     }
     var shown = code.slice(0, 4) + '-' + code.slice(4);
@@ -135,7 +224,7 @@
       selection.addRange(range);
     }
     $('copy').addEventListener('click', function () {
-      var done = function () { $('copy').textContent = t('Código copiado', 'Code copied'); };
+      var done = function () { $('copy').textContent = T.copied; };
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(shown).then(done, select);
       } else {
@@ -148,14 +237,14 @@
       return new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
     }
     function dates(timing, dayCount) {
-      var days = dayCount === 1 ? t('1 día', '1 day') : t(dayCount + ' días', dayCount + ' days');
+      var days = dayCount === 1 ? T.day : fill(T.days, { n: dayCount });
       try {
         if (timing.kind === 'exact') {
-          var f = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
+          var f = new Intl.DateTimeFormat(T.locale, { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
           return f.format(day(timing.start)) + ' – ' + f.format(day(timing.end)) + ' · ' + days;
         }
         if (timing.kind === 'month') {
-          var m = new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric', timeZone: 'UTC' });
+          var m = new Intl.DateTimeFormat(T.locale, { month: 'long', year: 'numeric', timeZone: 'UTC' });
           return m.format(day(timing.month + '-01')) + ' · ' + days;
         }
       } catch (e) { /* older browsers: just the days */ }
@@ -164,27 +253,23 @@
 
     fetch(API + '/v1/invites/' + code, { credentials: 'omit' })
       .then(function (response) {
-        if (response.status === 404) throw new Error(t('Esta invitación no existe. Revisa el enlace o pide otro.',
-                                                         'This invitation does not exist. Check the link or ask for a new one.'));
-        if (response.status === 410) throw new Error(t('Esta invitación ha caducado o se ha anulado. Pide otra.',
-                                                         'This invitation has expired or was cancelled. Ask for a new one.'));
+        if (response.status === 404) throw new Error(T.notFound);
+        if (response.status === 410) throw new Error(T.gone);
         if (!response.ok) throw new Error('');
         return response.json();
       })
       .then(function (invite) {
         var trip = invite.trip || {};
         var name = trip.organizerFirstName;
-        $('title').textContent = name ? t(name + ' te invita a su viaje a Japón', name + ' invites you to their trip to Japan')
-                                      : t('Te invitan a un viaje a Japón', "You're invited to a trip to Japan");
+        $('title').textContent = name ? fill(T.named, { name: name }) : T.invited;
         $('trip-title').textContent = trip.title || '';
         $('trip-dates').textContent = dates(trip.timing || {}, trip.dayCount || 0);
         var people = trip.memberCount || 1;
-        $('trip-people').textContent = people === 1 ? t('1 persona en el viaje', '1 person on the trip')
-                                                    : t(people + ' personas en el viaje', people + ' people on the trip');
+        $('trip-people').textContent = people === 1 ? T.person : fill(T.people, { n: people });
         (trip.cities || []).forEach(function (city) {
           var chip = document.createElement('span');
           chip.className = 'chip';
-          chip.textContent = city;
+          chip.textContent = (CITIES[city] && CITIES[city][lang]) || city;
           $('trip-cities').appendChild(chip);
         });
         $('card').hidden = false;
