@@ -64,7 +64,7 @@ a { color: var(--accent); }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 18px; }
 .brand img { width: 32px; height: 32px; border-radius: 8px; }
 .nav { display: flex; gap: 20px; }
-.nav a { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500; transition: color 150ms ease; }
+.nav a { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500; white-space: nowrap; transition: color 150ms ease; }
 /* The language link shows its full name on wide screens and a two-letter code on phones. */
 .nav .lang-short { display: none; }
 @media (hover: hover) and (pointer: fine) {
@@ -391,3 +391,27 @@ details[open] > p { animation: faq-in 240ms var(--ease-out); }
 @media (max-width: 359px) {
   .nav a.hide-xs { display: none; }
 }
+
+/* The language menu in the header: a globe and the current language; the app's seven languages open below it. */
+/* Not the FAQ's accordion: no card, no plus sign. */
+.lang-menu { position: relative; background: none; border: 0; border-radius: 0; padding: 0; }
+.lang-menu summary { display: block; list-style: none; cursor: pointer; color: var(--muted); font-size: 15px; font-weight: 500; white-space: nowrap; }
+.lang-menu summary::after { content: none; }
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu[open] summary { color: var(--text); }
+.lang-list { position: absolute; right: 0; top: calc(100% + 12px); z-index: 20; display: grid; gap: 2px; min-width: 170px; padding: 8px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); }
+.nav .lang-list a { padding: 7px 10px; border-radius: 8px; color: var(--text); }
+.nav .lang-list a[aria-current="page"] { background: var(--accent-soft); color: var(--accent); }
+@media (hover: hover) and (pointer: fine) {
+  .lang-menu summary:hover { color: var(--text); }
+  .nav .lang-list a:hover { background: var(--accent-soft); }
+}
+
+/* Shared trips (coming soon): a placeholder screen with 仲間 until its screenshots exist, and the small badge. */
+.phone-soon { display: grid; place-items: center; aspect-ratio: 539 / 1170; border-radius: 37px;
+  background: linear-gradient(165deg, var(--accent-soft), var(--surface) 70%); }
+.phone-soon span { color: var(--accent); font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+  font-size: 64px; font-weight: 700; letter-spacing: 0.12em; writing-mode: vertical-rl; }
+.badge-soon { display: inline-block; margin-left: 6px; padding: 2px 9px; border-radius: 999px; background: var(--accent-soft);
+  color: var(--accent); font-size: 12px; letter-spacing: 0.04em; text-transform: none; vertical-align: 1px; }

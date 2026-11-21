@@ -11,7 +11,8 @@
 
   var script = document.currentScript;
   var page = script && script.getAttribute('data-page');
-  var lang = document.documentElement.lang === 'es' ? 'es' : 'en';
+  // The page's own language (zh-Hant-TW → zh), English for any other.
+  var lang = (document.documentElement.lang || 'en').toLowerCase().split('-')[0];
   var TEXT = {
     es: {
       label: 'Cookies',
@@ -28,8 +29,49 @@
       policy: '/privacy/#analytics',
       reject: 'Reject',
       accept: 'Accept'
+    },
+    fr: {
+      label: 'Cookies',
+      text: 'Si tu acceptes, nous utilisons Google Analytics (avec des cookies de Google) pour savoir combien de personnes visitent cette page.',
+      more: 'En savoir plus',
+      policy: '/fr/confidentialite/#analytics',
+      reject: 'Refuser',
+      accept: 'Accepter'
+    },
+    de: {
+      label: 'Cookies',
+      text: 'Wenn du zustimmst, nutzen wir Google Analytics (mit Cookies von Google), um zu sehen, wie viele Menschen diese Seite besuchen.',
+      more: 'Mehr erfahren',
+      policy: '/de/datenschutz/#analytics',
+      reject: 'Ablehnen',
+      accept: 'Akzeptieren'
+    },
+    it: {
+      label: 'Cookie',
+      text: 'Se accetti, usiamo Google Analytics (con cookie di Google) per sapere quante persone visitano questa pagina.',
+      more: 'Maggiori informazioni',
+      policy: '/it/privacy/#analytics',
+      reject: 'Rifiuta',
+      accept: 'Accetta'
+    },
+    ko: {
+      label: '쿠키',
+      text: '동의하시면 이 페이지의 방문자 수를 알기 위해 Google 애널리틱스(Google 쿠키 사용)를 사용합니다.',
+      more: '자세히 알아보기',
+      policy: '/ko/privacy/#analytics',
+      reject: '거부',
+      accept: '동의'
+    },
+    zh: {
+      label: 'Cookie',
+      text: '如果你同意，我們會使用 Google Analytics（使用 Google 的 Cookie）來了解有多少人造訪這個頁面。',
+      more: '瞭解詳情',
+      policy: '/zh-hant/privacy/#analytics',
+      reject: '拒絕',
+      accept: '接受'
     }
-  }[lang];
+  };
+  TEXT = TEXT[lang] || TEXT.en;
 
   function count(event) {
     if (!page || !navigator.sendBeacon) return;

@@ -127,29 +127,58 @@
   </footer>
   <script>
     // Shown only when the redirect didn't happen (a computer, or an in-app browser that blocked it):
-    // the buttons carry the same campaign tags, and the text follows lang=en.
+    // the buttons carry the same campaign tags. The text follows the ad's lang= (es by default), or, for any other
+    // value, the browser's language among the app's seven.
     (function () {
       var l = N2G.links(location.search);
       document.querySelector('[data-store="app_store"]').href = l.appStore;
       document.querySelector('[data-store="google_play"]').href = l.play;
-      if (!l.en) return;
-      document.documentElement.lang = 'en';
-      document.title = 'Nippon2Go – Get the app';
-      document.querySelector('.hero-icon').alt = 'Nippon2Go app icon';
-      var text = {
-        title: 'Your Japan trip, organized.',
-        lead: 'Get Nippon2Go free on your phone:',
-        appStoreSmall: 'Download free on the',
-        playSmall: 'Get it on',
-        note: 'Store not opening? Tap ··· at the top right and choose “Open in browser”.',
-        privacy: 'Privacy'
+      var TEXT = {
+        en: { page: 'Nippon2Go – Get the app', alt: 'Nippon2Go app icon', title: 'Your Japan trip, organized.',
+          lead: 'Get Nippon2Go free on your phone:', appStoreSmall: 'Download free on the', playSmall: 'Get it on',
+          note: 'Store not opening? Tap ··· at the top right and choose “Open in browser”.', privacy: 'Privacy',
+          home: '../', policy: '../privacy/' },
+        fr: { page: 'Nippon2Go – Télécharge l’app', alt: 'Icône de l’app Nippon2Go', title: 'Ton voyage au Japon, organisé.',
+          lead: 'Télécharge Nippon2Go gratuitement sur ton téléphone :', appStoreSmall: 'Télécharge-la gratuitement sur l’', playSmall: 'Disponible sur',
+          note: 'La boutique ne s’ouvre pas ? Touche ··· en haut à droite et choisis « Ouvrir dans le navigateur ».', privacy: 'Confidentialité',
+          home: '../fr/', policy: '../fr/confidentialite/' },
+        de: { page: 'Nippon2Go – Hol dir die App', alt: 'Nippon2Go-App-Symbol', title: 'Deine Japanreise, organisiert.',
+          lead: 'Lade Nippon2Go kostenlos auf dein Handy:', appStoreSmall: 'Kostenlos laden im', playSmall: 'Jetzt bei',
+          note: 'Der Store öffnet sich nicht? Tippe oben rechts auf ··· und wähle „Im Browser öffnen“.', privacy: 'Datenschutz',
+          home: '../de/', policy: '../de/datenschutz/' },
+        it: { page: 'Nippon2Go – Scarica l’app', alt: 'Icona dell’app Nippon2Go', title: 'Il tuo viaggio in Giappone, organizzato.',
+          lead: 'Scarica Nippon2Go gratis sul tuo telefono:', appStoreSmall: 'Scaricala gratis su', playSmall: 'Disponibile su',
+          note: 'Lo store non si apre? Tocca ··· in alto a destra e scegli «Apri nel browser».', privacy: 'Privacy',
+          home: '../it/', policy: '../it/privacy/' },
+        ko: { page: 'Nippon2Go – 앱 받기', alt: 'Nippon2Go 앱 아이콘', title: '일본 여행, 한곳에서 정리하세요.',
+          lead: '휴대폰에 Nippon2Go를 무료로 받으세요:', appStoreSmall: '무료로 다운로드', playSmall: '다운로드',
+          note: '스토어가 열리지 않나요? 오른쪽 위의 ···을 누르고 ‘브라우저에서 열기’를 선택하세요.', privacy: '개인정보 보호',
+          home: '../ko/', policy: '../ko/privacy/' },
+        zh: { page: 'Nippon2Go – 下載 App', alt: 'Nippon2Go App 圖示', title: '你的日本之旅，一手掌握。',
+          lead: '在手機上免費下載 Nippon2Go：', appStoreSmall: '免費下載於', playSmall: '立即下載',
+          note: '商店沒有開啟嗎？點右上角的 ···，然後選擇「在瀏覽器中開啟」。', privacy: '隱私',
+          home: '../zh-hant/', policy: '../zh-hant/privacy/' }
       };
+      var lang = new URLSearchParams(location.search).get('lang') || 'es';
+      if (lang !== 'es' && !TEXT[lang]) {
+        var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
+        lang = 'en';
+        for (var i = 0; i < list.length; i++) {
+          var code = String(list[i]).toLowerCase().split('-')[0];
+          if (code === 'es' || TEXT[code]) { lang = code; break; }
+        }
+      }
+      if (lang === 'es') return;
+      var text = TEXT[lang];
+      document.documentElement.lang = lang === 'zh' ? 'zh-Hant-TW' : lang;
+      document.title = text.page;
+      document.querySelector('.hero-icon').alt = text.alt;
       document.querySelectorAll('[data-text]').forEach(function (el) {
         el.textContent = text[el.getAttribute('data-text')];
       });
-      document.querySelector('.brand').href = '../';
-      document.querySelector('[data-text="privacy"]').href = '../privacy/';
-      document.querySelector('.site-footer nav a').href = '../';
+      document.querySelector('.brand').href = text.home;
+      document.querySelector('[data-text="privacy"]').href = text.policy;
+      document.querySelector('.site-footer nav a').href = text.home;
     })();
   </script>
 </body>

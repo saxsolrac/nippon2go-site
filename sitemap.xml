@@ -1,31 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nippon2go.com/</loc>
-    <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/"/>
-  </url>
-  <url>
     <loc>https://nippon2go.com/es/</loc>
-    <lastmod>2026-11-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/"/>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/"/>
   </url>
   <url>
-    <loc>https://nippon2go.com/privacy/</loc>
-    <lastmod>2026-11-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/privacy/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/privacidad/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/privacy/"/>
+    <loc>https://nippon2go.com/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/ko/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/zh-hant/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/"/>
   </url>
   <url>
     <loc>https://nippon2go.com/es/privacidad/</loc>
-    <lastmod>2026-11-20</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/privacy/"/>
+    <lastmod>2026-11-21</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/privacy/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/confidentialite/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/datenschutz/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/privacy/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/ko/privacy/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/zh-hant/privacy/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://nippon2go.com/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://nippon2go.com/zh-hant/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/privacy/"/>
   </url>
 </urlset>
