@@ -4,6 +4,9 @@
 // the page has loaded, tagged with the link (App Store campaign and Google Play referrer "abrir-rutas-kioto"), and the
 // page keeps the buttons for Back and for computers. In the app's 7 languages, from the browser's. No cookies, nothing
 // counted.
+// Inside Instagram, TikTok or Facebook the link loads in that app's own browser, which never hands it to the app (tested
+// on an iPhone with an Instagram story, 25/11/2026): there the page doesn't go to the store but offers «Abrir en la app»,
+// which leaves for Safari on iOS (it hands the link to the app, or shows its «Abrir» banner) and for the app on Android.
 var N2GLink = (function () {
   // "/abrir/rutas/kioto/" → "abrir-rutas-kioto", within the App Store's 30-character campaign limit.
   function campaign(path) {
@@ -24,7 +27,23 @@ var N2GLink = (function () {
     if (/Android/i.test(ua)) return 'android';
     return 'other';
   }
-  return { campaign: campaign, links: links, platform: platform };
+  // Browsers inside other apps (Instagram, Facebook, Messenger, Threads, TikTok, LinkedIn, Snapchat, Pinterest, LINE):
+  // they load links themselves, so the phone never offers them to Nippon2Go as Safari, Chrome or WhatsApp do.
+  function inApp(ua) {
+    return /Instagram|FBAN|FBAV|FB_IAB|FBIOS|Barcelona|musical_ly|BytedanceWebview|TikTok|LinkedInApp|Snapchat|Pinterest|\bLine\//i.test(ua);
+  }
+  // The way out of such a browser to the same link: on iOS 17+ (the app's minimum) Safari, marked ?desde=app so the
+  // page there waits for the app banner instead of going to the store; on Android an intent for Nippon2Go with the
+  // link, or Google Play when it isn't installed.
+  function escape(platform, path, hash, play) {
+    if (platform === 'ios') return 'x-safari-https://nippon2go.com' + path + '?desde=app' + hash;
+    if (platform === 'android') {
+      return 'intent://nippon2go.com' + path + hash + '#Intent;scheme=https;package=com.nippon2go.app;S.browser_fallback_url=' +
+        encodeURIComponent(play) + ';end';
+    }
+    return null;
+  }
+  return { campaign: campaign, links: links, platform: platform, inApp: inApp, escape: escape };
 })();
 
 // The texts in the app's 7 languages: Spanish in the HTML, English in data-en, the other five here, keyed by the
@@ -55,7 +74,23 @@ var N2GText = (function () {
       it: 'Hai già l’app? In Instagram o TikTok tocca ··· in alto a destra e scegli «Apri nel browser».',
       ko: '이미 앱이 있나요? Instagram이나 TikTok에서 오른쪽 위의 ···을 누르고 ‘브라우저에서 열기’를 선택하세요.',
       zh: '已經有 App 了嗎？在 Instagram 或 TikTok 中點右上角的 ···，然後選擇「在瀏覽器中開啟」。' },
-    'Download free on the': { fr: 'Télécharge-la gratuitement sur l’', de: 'Kostenlos laden im', it: 'Scaricala gratis su', ko: '무료로 다운로드', zh: '免費下載於' },
+    'Already have Nippon2Go?': {
+      es: '¿Ya tienes Nippon2Go?', fr: 'Tu as déjà Nippon2Go ?', de: 'Du hast Nippon2Go schon?', it: 'Hai già Nippon2Go?',
+      ko: '이미 Nippon2Go가 있나요?', zh: '已經有 Nippon2Go 了嗎？' },
+    'Open in the app': {
+      es: 'Abrir en la app', fr: 'Ouvrir dans l’app', de: 'In der App öffnen', it: 'Apri nell’app', ko: '앱에서 열기', zh: '在 App 中開啟' },
+    'If Safari opens, tap “Open” in the banner at the top.': {
+      es: 'Si se abre Safari, toca «Abrir» en el aviso de arriba.',
+      fr: 'Si Safari s’ouvre, touche « Ouvrir » dans la bannière en haut.',
+      de: 'Wenn sich Safari öffnet, tippe oben im Banner auf „Öffnen“.', it: 'Se si apre Safari, tocca «Apri» nel banner in alto.',
+      ko: 'Safari가 열리면 위쪽 배너에서 ‘열기’를 누르세요.', zh: '如果開啟了 Safari，請點頂端橫幅中的「打開」。' },
+    'Tap “Open” in the banner at the top to go to this screen in Nippon2Go.': {
+      es: 'Toca «Abrir» en el aviso de arriba para ir a esta pantalla de Nippon2Go.',
+      fr: 'Touche « Ouvrir » dans la bannière en haut pour aller sur cet écran de Nippon2Go.',
+      de: 'Tippe oben im Banner auf „Öffnen“, um diesen Bildschirm in Nippon2Go zu öffnen.',
+      it: 'Tocca «Apri» nel banner in alto per andare a questa schermata di Nippon2Go.',
+      ko: '위쪽 배너에서 ‘열기’를 누르면 Nippon2Go의 이 화면으로 이동합니다.', zh: '點頂端橫幅中的「打開」，即可前往 Nippon2Go 的這個畫面。' },
+    'Download free on the': { fr:'Télécharge-la gratuitement sur l’', de: 'Kostenlos laden im', it: 'Scaricala gratis su', ko: '무료로 다운로드', zh: '免費下載於' },
     'Get it on': { fr: 'Disponible sur', de: 'Jetzt bei', it: 'Disponibile su', ko: '다운로드', zh: '立即下載' },
     'Privacy': { fr: 'Confidentialité', de: 'Datenschutz', it: 'Privacy', ko: '개인정보 보호', zh: '隱私' },
     'Nippon2Go app icon': { fr: 'Icône de l’app Nippon2Go', de: 'Nippon2Go-App-Symbol', it: 'Icona dell’app Nippon2Go', ko: 'Nippon2Go 앱 아이콘', zh: 'Nippon2Go App 圖示' },
@@ -117,7 +152,12 @@ var N2GText = (function () {
     if (h1) document.title = h1.textContent;
   }
 
-  return { language: language, translate: translate, apply: apply, home: HOME, privacy: PRIVACY };
+  // A text this script adds to the page itself (the Spanish lives in TEXT too).
+  function say(en, lang) {
+    return lang === 'es' && TEXT[en] && TEXT[en].es ? TEXT[en].es : translate(en, lang);
+  }
+
+  return { language: language, translate: translate, apply: apply, say: say, home: HOME, privacy: PRIVACY };
 })();
 
 document.addEventListener('DOMContentLoaded', function () { N2GText.apply(N2GText.language()); });
@@ -135,6 +175,57 @@ document.addEventListener('DOMContentLoaded', function () { N2GText.apply(N2GTex
     document.querySelector('[data-store="app_store"]').href = l.appStore;
     document.querySelector('[data-store="google_play"]').href = l.play;
   });
+
+  // Above the lead and the store buttons: what someone who already has the app does here.
+  function addBox(build) {
+    document.addEventListener('DOMContentLoaded', function () {
+      var buttons = document.querySelector('.store-buttons');
+      if (!buttons) return;
+      var before = buttons.previousElementSibling && buttons.previousElementSibling.classList.contains('lead')
+        ? buttons.previousElementSibling : buttons;
+      var box = document.createElement('div');
+      box.className = 'open-app';
+      box.style.cssText = 'display:grid;justify-items:center;gap:10px;margin:8px 0 28px';
+      build(box, N2GText.language());
+      before.parentNode.insertBefore(box, before);
+    });
+  }
+  function paragraph(text, strong) {
+    var p = document.createElement('p');
+    p.className = 'lead';
+    p.style.margin = '0';
+    if (strong) p.style.fontWeight = '600';
+    p.textContent = text;
+    return p;
+  }
+
+  var exit = N2GLink.inApp(navigator.userAgent || '') ? N2GLink.escape(p, location.pathname, location.hash, l.play) : null;
+  if (exit) {
+    // Inside Instagram, TikTok…: no store on its own, a button that leaves for the app (or Safari) instead.
+    addBox(function (box, lang) {
+      box.appendChild(paragraph(N2GText.say('Already have Nippon2Go?', lang), true));
+      var a = document.createElement('a');
+      a.className = 'button';
+      a.href = exit;
+      a.textContent = N2GText.say('Open in the app', lang);
+      box.appendChild(a);
+      if (p === 'ios') {
+        var hint = document.createElement('p');
+        hint.className = 'note';
+        hint.style.margin = '0';
+        hint.textContent = N2GText.say('If Safari opens, tap “Open” in the banner at the top.', lang);
+        box.appendChild(hint);
+      }
+    });
+    return;
+  }
+  if (p === 'ios' && /[?&]desde=app(&|$)/.test(location.search)) {
+    // Safari, from that button: the app banner above (apple-itunes-app with this link) opens this screen.
+    addBox(function (box, lang) {
+      box.appendChild(paragraph(N2GText.say('Tap “Open” in the banner at the top to go to this screen in Nippon2Go.', lang), true));
+    });
+    return;
+  }
   if (!url || back) return;
   // Go once the page has loaded, so this page stays in history and Back returns to its buttons.
   window.addEventListener('load', function () {
