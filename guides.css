@@ -40,7 +40,7 @@
 .place { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 18px; }
 .place h4 { margin: 0 0 4px; font-size: 18px; }
 .place p { margin: 0; font-size: 16px; color: var(--muted); }
-.place .place-meta { margin-top: 6px; font-size: 14px; color: var(--accent); font-weight: 500; }
+.place .place-info { margin-top: 6px; font-size: 14px; color: var(--accent); font-weight: 500; }
 .places-more { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
 
 .tips, .legs { padding-left: 22px; margin: 0; }
@@ -52,6 +52,9 @@
 .app-cta .store-buttons { margin-top: 16px; }
 .open-in-app { display: inline-block; margin-top: 14px; font-weight: 600; text-decoration: none; font-size: 15px; }
 .app-cta-wide { margin: 48px 0 72px; }
+.app-cta-inline { display: none; margin: 24px 0 8px; }
+.app-cta-inline .cta-title { margin: 0; font-weight: 700; color: var(--text); font-size: 17px; }
+.app-cta-inline .store-buttons { margin-top: 12px; justify-content: flex-start; }
 
 .it-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 40px; }
 .it-card { display: grid; gap: 6px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; text-decoration: none; color: var(--text); transition: transform 160ms var(--ease-out); }
@@ -72,6 +75,7 @@
 @media (max-width: 900px) {
   .guide-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .guide-aside { position: static; }
+  .app-cta-inline { display: block; }
 }
 @media (max-width: 520px) {
   .guide-body { font-size: 17px; }

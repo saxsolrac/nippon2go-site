@@ -1,0 +1,44 @@
+# Nippon2Go
+
+> Nippon2Go is a free Japan trip planner app for iPhone (iOS 17+) and Android, in English, Spanish, French, German, Italian, Korean and Traditional Chinese. It has 125+ hand-picked places in Tokyo, Kyoto, Osaka, Nara, Kamakura, Yokohama and Hiroshima, works out how many days to spend in each city, builds day-by-day routes with walking and train times, and includes booking links, a pre-trip checklist and shared trips.
+
+The guides below use the app's own data: its must-see days per city, its visit-time estimates and its train times and fares (usual timetable, one adult, one way, rounded).
+
+## Guides (English)
+
+- [Japan travel guides](https://nippon2go.com/guides/): What to see in Tokyo, Kyoto, Osaka, Nara, Hiroshima, Kamakura and Yokohama, how many days to spend in each city, and 10 and 15-day itineraries.
+- [10-Day Japan Itinerary: Tokyo, Kyoto and Osaka](https://nippon2go.com/guides/japan-10-days/): Japan in 10 days, day by day: 4 in Tokyo, 3 in Kyoto and 3 in Osaka, with what to see each day and the trains between cities with rough fares.
+- [Japan 2-Week Itinerary (15 Days)](https://nippon2go.com/guides/japan-15-days/): Japan in 15 days (just over two weeks): Tokyo, Kyoto, Nara, Osaka and Hiroshima with Miyajima, what to see each day and the trains between cities.
+- [Things to Do in Tokyo: Day-by-Day Must-Sees](https://nippon2go.com/guides/tokyo/): What to see in Tokyo by neighbourhood, how many days to spend and how to get around, with the Nippon2Go app's day-by-day route and Hakone and Fuji trips.
+- [Things to Do in Kyoto: Day-by-Day Must-Sees](https://nippon2go.com/guides/kyoto/): What to see in Kyoto day by day: Fushimi Inari, Kiyomizu-dera, Arashiyama, the Golden Pavilion and Gion. How many days to spend and how to get there.
+- [Things to Do in Osaka: Day-by-Day Must-Sees](https://nippon2go.com/guides/osaka/): What to see in Osaka: Dotonbori, the castle, Kuromon, Shinsekai, Kaiyukan aquarium and Universal Studios. How many days to spend and how to get there.
+- [Nara in One Day: Deer, Tōdai-ji and Nara Park](https://nippon2go.com/guides/nara/): Nara in a day: the deer park, the Great Buddha of Tōdai-ji and the National Museum. How to get there from Kyoto or Osaka and what to see.
+- [Hiroshima and Miyajima: a 2-Day Itinerary](https://nippon2go.com/guides/hiroshima/): Hiroshima and Miyajima in 2 days: Peace Park, the Atomic Bomb Dome, the museum, the great torii of Itsukushima and Mt Misen. With the Nippon2Go route.
+- [Kamakura Day Trip: the Great Buddha and Temples](https://nippon2go.com/guides/kamakura/): Kamakura in a day from Tokyo: the Great Buddha, Hase-dera, Tsurugaoka Hachiman-gū, Komachi Street and the Enoden coast. What to see and how to get there.
+- [Things to Do in Yokohama: Harbour and Chinatown](https://nippon2go.com/guides/yokohama/): What to see in Yokohama, half an hour from Tokyo: Minato Mirai, the Red Brick Warehouse, the Cup Noodles Museum, Chinatown and Sankei-en Garden.
+
+## Guías (español)
+
+- [Guías de Japón](https://nippon2go.com/es/guias/): Qué ver en Tokio, Kioto, Osaka, Nara, Hiroshima, Kamakura y Yokohama, cuántos días dedicar a cada ciudad e itinerarios de 10 y 15 días.
+- [Itinerario Japón 10 días: Tokio, Kioto y Osaka](https://nippon2go.com/es/guias/japon-10-dias/)
+- [Itinerario Japón 15 días con Nara e Hiroshima](https://nippon2go.com/es/guias/japon-15-dias/)
+- [Qué ver en Tokio: imprescindibles día a día](https://nippon2go.com/es/guias/tokio/)
+- [Qué ver en Kioto: imprescindibles día a día](https://nippon2go.com/es/guias/kioto/)
+- [Qué ver en Osaka: imprescindibles día a día](https://nippon2go.com/es/guias/osaka/)
+- [Qué ver en Nara en un día: ciervos y Tōdai-ji](https://nippon2go.com/es/guias/nara/)
+- [Qué ver en Hiroshima y Miyajima: ruta de 2 días](https://nippon2go.com/es/guias/hiroshima/)
+- [Qué ver en Kamakura en un día: el Gran Buda](https://nippon2go.com/es/guias/kamakura/)
+- [Qué ver en Yokohama: puerto y barrio chino](https://nippon2go.com/es/guias/yokohama/)
+
+## Other languages
+
+- [Guides en français](https://nippon2go.com/fr/guides/)
+- [Reiseführer auf Deutsch](https://nippon2go.com/de/reisefuehrer/)
+- [Guide in italiano](https://nippon2go.com/it/guide/)
+
+## The app
+
+- [Nippon2Go home page](https://nippon2go.com/): features, FAQ and support
+- [App Store](https://apps.apple.com/app/id6818258413)
+- [Google Play](https://play.google.com/store/apps/details?id=com.nippon2go.app)
+- [Privacy policy](https://nippon2go.com/privacy/)
