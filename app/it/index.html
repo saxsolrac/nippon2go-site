@@ -22,14 +22,18 @@
   <link rel="icon" type="image/png" href="../../icon.png">
   <link rel="apple-touch-icon" href="../../icon.png">
   <link rel="stylesheet" href="../../style.css">
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-    (function () {
-        var script = document.createElement("script");
-        script.async = 1;
-        script.setAttribute("data-cmp-ab","2");
+  <script>
+    // Travelpayouts (affiliate network): loaded once the page has finished, so it doesn't slow it down.
+    window.addEventListener('load', function () {
+      var load = function () {
+        var script = document.createElement('script');
+        script.async = true;
+        script.setAttribute('data-cmp-ab', '2');
         script.src = 'https://emrldtp.com/NTkwMjc3.js?t=590277';
         document.head.appendChild(script);
-    })();
+      };
+      if ('requestIdleCallback' in window) { requestIdleCallback(load, { timeout: 4000 }); } else { setTimeout(load, 2000); }
+    });
   </script>
   <script src="../landing.js" data-page="app-it" defer></script>
 </head>

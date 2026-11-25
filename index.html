@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nippon2Go – Japan Trip Planner</title>
-  <meta name="description" content="Plan your trip to Japan: 125+ hand-picked places, day plans that adapt to your pace, booking links and a pre-trip checklist. Help and support for Nippon2Go.">
-  <meta property="og:title" content="Nippon2Go – Japan Trip Planner">
+  <title>Free Japan Trip Planner &amp; Itinerary App | Nippon2Go</title>
+  <meta name="description" content="Pick what to see in Tokyo, Kyoto, Osaka and 4 more cities. Nippon2Go works out the days per city and plans each day’s route. Free on iPhone and Android.">
+  <meta property="og:title" content="Free Japan Trip Planner &amp; Itinerary App | Nippon2Go">
   <meta property="og:description" content="Hand-picked places and day plans that adapt to your pace. All in one app.">
   <meta property="og:image" content="https://nippon2go.com/og-image.png">
   <meta property="og:url" content="https://nippon2go.com/">
@@ -26,14 +26,81 @@
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add('js');</script>
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-    (function () {
-        var script = document.createElement("script");
-        script.async = 1;
-        script.setAttribute("data-cmp-ab","2");
+  <script>
+    // Travelpayouts (affiliate network): loaded once the page has finished, so it doesn't slow it down.
+    window.addEventListener('load', function () {
+      var load = function () {
+        var script = document.createElement('script');
+        script.async = true;
+        script.setAttribute('data-cmp-ab', '2');
         script.src = 'https://emrldtp.com/NTkwMjc3.js?t=590277';
         document.head.appendChild(script);
-    })();
+      };
+      if ('requestIdleCallback' in window) { requestIdleCallback(load, { timeout: 4000 }); } else { setTimeout(load, 2000); }
+    });
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nippon2go.com/#org",
+      "name": "Nippon2Go",
+      "url": "https://nippon2go.com/",
+      "logo": "https://nippon2go.com/icon.png",
+      "email": "carlos@nippon2go.com",
+      "sameAs": [
+        "https://apps.apple.com/app/id6818258413",
+        "https://play.google.com/store/apps/details?id=com.nippon2go.app",
+        "https://www.instagram.com/nippon2go_/",
+        "https://www.instagram.com/nippon2go_en/",
+        "https://www.tiktok.com/@nippon2go",
+        "https://www.tiktok.com/@nippon2go_en"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nippon2go.com/#website",
+      "url": "https://nippon2go.com/",
+      "name": "Nippon2Go",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://nippon2go.com/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://nippon2go.com/#app",
+      "name": "Nippon2Go",
+      "description": "Free Japan trip planner app: 125+ hand-picked places in Tokyo, Kyoto, Osaka, Nara, Kamakura, Yokohama and Hiroshima, days per city, day-by-day routes, booking links, a pre-trip checklist and shared trips.",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "iOS 17.0 or later, Android",
+      "inLanguage": [
+        "en",
+        "es",
+        "fr",
+        "de",
+        "it",
+        "ko",
+        "zh-Hant"
+      ],
+      "image": "https://nippon2go.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "installUrl": [
+        "https://apps.apple.com/app/id6818258413",
+        "https://play.google.com/store/apps/details?id=com.nippon2go.app"
+      ],
+      "publisher": {
+        "@id": "https://nippon2go.com/#org"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -42,6 +109,7 @@
       <a class="brand" href="./"><img src="icon.png" alt="" width="32" height="32">Nippon2Go</a>
       <nav class="nav">
         <a class="hide-md" href="#features">Features</a>
+        <a class="hide-sm" href="guides/">Guides</a>
         <a href="#faq">FAQ</a>
         <a class="hide-xs" href="#support">Support</a>
         <a class="hide-md" href="#partners">Partners</a>
@@ -79,7 +147,7 @@
               <span><small>Get it on</small>Google Play</span>
             </a>
           </div>
-          <span class="pill">iPhone (iOS 17+) · Android</span>
+          <span class="pill">Free · iPhone (iOS 17+) · Android</span>
         </div>
         <div class="hero-phones">
           <figure class="phone phone-back"><img src="screens/my-routes.jpg" width="539" height="1170" alt="My routes: each city with the estimated number of days and visits"></figure>
@@ -146,13 +214,31 @@
           <div class="card">
             <div class="emoji" aria-hidden="true">📅</div>
             <h3>Your trip, day by day</h3>
-            <p>An editable agenda for every day, which you can add to your iPhone Calendar in Japan time.</p>
+            <p>An editable agenda for every day, which you can add to your phone’s calendar in Japan time.</p>
           </div>
           <div class="card">
             <div class="emoji" aria-hidden="true">🔒</div>
             <h3>Private by design</h3>
-            <p>No account required. Your trips stay on your phone. Available in 7 languages.</p>
+            <p>No account needed to plan: your trip stays on your phone. Sign in only to share it or back it up. Available in 7 languages.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides">
+      <div class="wrap">
+        <h2>Guides for your Japan trip</h2>
+        <p class="section-intro">What to see in each city, how many days to spend and day-by-day itineraries, with the app’s routes.</p>
+        <div class="guide-links">
+          <a class="it" href="guides/japan-10-days/">Japan in 10 days</a>
+          <a class="it" href="guides/japan-15-days/">Japan in 15 days</a>
+          <a href="guides/tokyo/">Tokyo</a>
+          <a href="guides/kyoto/">Kyoto</a>
+          <a href="guides/osaka/">Osaka</a>
+          <a href="guides/nara/">Nara</a>
+          <a href="guides/hiroshima/">Hiroshima</a>
+          <a href="guides/kamakura/">Kamakura</a>
+          <a href="guides/yokohama/">Yokohama</a>
         </div>
       </div>
     </section>
@@ -164,11 +250,15 @@
         <div class="faq">
           <details>
             <summary>Do I need an account?</summary>
-            <p>No. You can use the whole app without signing in. If you like, you can sign in with Apple or Google in <strong>Profile → Account</strong>. Your trips are not uploaded anywhere either way.</p>
+            <p>No. You can plan your whole trip without signing in. You only need an account to share a trip or back it up: sign in with Apple or Google (Google on Android) in <strong>Profile</strong>.</p>
           </details>
           <details>
             <summary>Where are my trips saved?</summary>
-            <p>Only on your phone. Trips are not synced between devices, and deleting the app deletes your trips.</p>
+            <p>On your phone. If you sign in, you can back up a copy to your account from <strong>Profile</strong>: it is saved in the cloud, on our server in the EU, without photos or settings. On another phone, iPhone or Android, sign in with the same account and restore your copy. The copy doesn’t update by itself, so back it up again when you change the trip. If you delete the app without a copy, your trip is deleted.</p>
+          </details>
+          <details>
+            <summary>Can I plan the trip with the people I travel with?</summary>
+            <p>Yes. In <strong>My trip</strong>, open your travel companions, tap <strong>Invite</strong> and sign in. Choose whether those who join can edit the trip or only view it, and send them the link or the code; it works on iPhone and Android. What each person changes reaches everyone else.</p>
           </details>
           <details>
             <summary>Does it work without an internet connection?</summary>
@@ -179,8 +269,8 @@
             <p>In <strong>Explore</strong>, open a place and tap <strong>Add to my route</strong>. In <strong>My routes</strong>, Nippon2Go groups your places by city and distance and splits them into days based on the pace you choose in <strong>Your pace in every city</strong> (Relaxed, Balanced or Active). You can adjust visit times, and then add the route to your schedule. Times and distances are estimates, so check opening hours and transport before you go.</p>
           </details>
           <details>
-            <summary>How do I add my plans to my iPhone Calendar?</summary>
-            <p>In <strong>My trip</strong>, tap <strong>Add itinerary to calendar</strong>, review the events and confirm. Nippon2Go only asks for permission to add events. It cannot read your calendar.</p>
+            <summary>How do I add my plans to my phone’s calendar?</summary>
+            <p>In <strong>My trip</strong>, tap <strong>Add itinerary to calendar</strong>, review the events and confirm. The first time, allow access to your calendar. Plans are added in Japan time.</p>
           </details>
           <details>
             <summary>Can I book hotels and activities in the app?</summary>
@@ -192,7 +282,7 @@
           </details>
           <details>
             <summary>How do I sign out or delete my account?</summary>
-            <p>To sign out, go to <strong>Profile → Account → Sign out</strong>. This ends your session and keeps your trips. To delete your account, go to <strong>Profile → Account → Delete account</strong>: the app removes its access to your Apple or Google account and everything it kept for the account on your phone. Your trips stay on your phone until you delete the app.</p>
+            <p>To sign out, go to <strong>Profile → Account → Sign out</strong>: your trips stay on your phone. To delete your account, tap <strong>Delete account</strong> in <strong>Profile</strong> and confirm: your data on our server is deleted (your backup and your name for the group) and you leave any shared trips; your companions’ trips stay theirs. Your trip stays on your phone. You can also do it without opening the app at <a href="delete-account/">nippon2go.com/delete-account/</a>.</p>
           </details>
         </div>
       </div>
@@ -251,10 +341,13 @@
     <div class="wrap">
       <span>© 2026 Nippon2Go</span>
       <nav>
+        <a href="guides/">Guides</a>
         <a href="https://apps.apple.com/app/apple-store/id6818258413?pt=129547332&amp;ct=web&amp;mt=8" target="_blank" rel="noopener">App Store</a>
         <a href="https://play.google.com/store/apps/details?id=com.nippon2go.app&amp;referrer=utm_source%3Dnippon2go.com%26utm_medium%3Dweb%26utm_campaign%3Dsite-en-footer" target="_blank" rel="noopener">Google Play</a>
         <a href="privacy/">Privacy Policy</a>
         <a href="mailto:carlos@nippon2go.com">Contact</a>
+        <a href="https://www.instagram.com/nippon2go_en/" target="_blank" rel="me noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@nippon2go_en" target="_blank" rel="me noopener">TikTok</a>
         <a href="/es/" hreflang="es" lang="es">Español</a>
         <a href="/fr/" hreflang="fr" lang="fr">Français</a>
         <a href="/de/" hreflang="de" lang="de">Deutsch</a>

@@ -17,14 +17,18 @@
   <link rel="icon" type="image/png" href="../../icon.png">
   <link rel="apple-touch-icon" href="../../icon.png">
   <link rel="stylesheet" href="../../style.css">
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-    (function () {
-        var script = document.createElement("script");
-        script.async = 1;
-        script.setAttribute("data-cmp-ab","2");
+  <script>
+    // Travelpayouts (affiliate network): loaded once the page has finished, so it doesn't slow it down.
+    window.addEventListener('load', function () {
+      var load = function () {
+        var script = document.createElement('script');
+        script.async = true;
+        script.setAttribute('data-cmp-ab', '2');
         script.src = 'https://emrldtp.com/NTkwMjc3.js?t=590277';
         document.head.appendChild(script);
-    })();
+      };
+      if ('requestIdleCallback' in window) { requestIdleCallback(load, { timeout: 4000 }); } else { setTimeout(load, 2000); }
+    });
   </script>
 </head>
 <body>
@@ -201,6 +205,8 @@
         <a href="../">홈</a>
         <a href="../#support">고객 지원</a>
         <a href="mailto:carlos@nippon2go.com">문의</a>
+        <a href="https://www.instagram.com/nippon2go_en/" target="_blank" rel="me noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@nippon2go_en" target="_blank" rel="me noopener">TikTok</a>
         <a href="/es/privacidad/" hreflang="es" lang="es">Español</a>
         <a href="/privacy/" hreflang="en" lang="en">English</a>
         <a href="/fr/confidentialite/" hreflang="fr" lang="fr">Français</a>

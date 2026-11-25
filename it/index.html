@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nippon2Go – Organizza il tuo viaggio in Giappone</title>
-  <meta name="description" content="Pianifica il tuo viaggio in Giappone: oltre 125 luoghi selezionati, programmi giorno per giorno che si adattano al tuo ritmo, link per prenotare e una lista di viaggio da spuntare prima di partire. Aiuto e assistenza per Nippon2Go.">
-  <meta property="og:title" content="Nippon2Go – Organizza il tuo viaggio in Giappone">
+  <title>Organizza il viaggio in Giappone: app gratis | Nippon2Go</title>
+  <meta name="description" content="Scegli cosa vedere a Tokyo, Kyoto, Osaka e altre 4 città: l’app calcola i giorni per città e crea l’itinerario di ogni giorno. Gratis su iPhone e Android.">
+  <meta property="og:title" content="Organizza il viaggio in Giappone: app gratis | Nippon2Go">
   <meta property="og:description" content="Luoghi selezionati e programmi giorno per giorno che si adattano al tuo ritmo. Tutto in un’unica app.">
   <meta property="og:image" content="https://nippon2go.com/og-image.png">
   <meta property="og:url" content="https://nippon2go.com/it/">
@@ -25,14 +25,81 @@
   <link rel="apple-touch-icon" href="../icon.png">
   <link rel="stylesheet" href="../style.css">
   <script>document.documentElement.classList.add('js');</script>
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-    (function () {
-        var script = document.createElement("script");
-        script.async = 1;
-        script.setAttribute("data-cmp-ab","2");
+  <script>
+    // Travelpayouts (affiliate network): loaded once the page has finished, so it doesn't slow it down.
+    window.addEventListener('load', function () {
+      var load = function () {
+        var script = document.createElement('script');
+        script.async = true;
+        script.setAttribute('data-cmp-ab', '2');
         script.src = 'https://emrldtp.com/NTkwMjc3.js?t=590277';
         document.head.appendChild(script);
-    })();
+      };
+      if ('requestIdleCallback' in window) { requestIdleCallback(load, { timeout: 4000 }); } else { setTimeout(load, 2000); }
+    });
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nippon2go.com/#org",
+      "name": "Nippon2Go",
+      "url": "https://nippon2go.com/",
+      "logo": "https://nippon2go.com/icon.png",
+      "email": "carlos@nippon2go.com",
+      "sameAs": [
+        "https://apps.apple.com/app/id6818258413",
+        "https://play.google.com/store/apps/details?id=com.nippon2go.app",
+        "https://www.instagram.com/nippon2go_/",
+        "https://www.instagram.com/nippon2go_en/",
+        "https://www.tiktok.com/@nippon2go",
+        "https://www.tiktok.com/@nippon2go_en"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nippon2go.com/it/#website",
+      "url": "https://nippon2go.com/it/",
+      "name": "Nippon2Go",
+      "inLanguage": "it",
+      "publisher": {
+        "@id": "https://nippon2go.com/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://nippon2go.com/#app",
+      "name": "Nippon2Go",
+      "description": "App gratis per organizzare il viaggio in Giappone: oltre 125 luoghi selezionati a Tokyo, Kyoto, Osaka, Nara, Kamakura, Yokohama e Hiroshima, giorni per città, itinerari giorno per giorno, link per prenotare, checklist e viaggi condivisi.",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "iOS 17.0 or later, Android",
+      "inLanguage": [
+        "en",
+        "es",
+        "fr",
+        "de",
+        "it",
+        "ko",
+        "zh-Hant"
+      ],
+      "image": "https://nippon2go.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "installUrl": [
+        "https://apps.apple.com/app/id6818258413",
+        "https://play.google.com/store/apps/details?id=com.nippon2go.app"
+      ],
+      "publisher": {
+        "@id": "https://nippon2go.com/#org"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -78,7 +145,7 @@
               <span><small>Disponibile su</small>Google Play</span>
             </a>
           </div>
-          <span class="pill">iPhone (iOS 17+) · Android</span>
+          <span class="pill">Gratis · iPhone (iOS 17+) · Android</span>
         </div>
         <div class="hero-phones">
           <figure class="phone phone-back"><img src="../screens/it/my-routes.jpg" width="539" height="1170" alt="I miei itinerari: ogni città con il numero stimato di giorni e di visite"></figure>
@@ -145,12 +212,12 @@
           <div class="card">
             <div class="emoji" aria-hidden="true">📅</div>
             <h3>Il tuo viaggio, giorno per giorno</h3>
-            <p>Un’agenda modificabile per ogni giorno, che puoi aggiungere al Calendario del tuo iPhone con l’ora del Giappone.</p>
+            <p>Un’agenda modificabile per ogni giorno, che puoi aggiungere al calendario del tuo telefono con l’ora del Giappone.</p>
           </div>
           <div class="card">
             <div class="emoji" aria-hidden="true">🔒</div>
             <h3>Pensata per la tua privacy</h3>
-            <p>Non serve un account. I tuoi viaggi restano sul tuo telefono. Disponibile in 7 lingue.</p>
+            <p>Non serve un account per pianificare: il viaggio resta sul tuo telefono. Accedi solo per condividerlo o salvarne una copia. Disponibile in 7 lingue.</p>
           </div>
         </div>
       </div>
@@ -163,11 +230,15 @@
         <div class="faq">
           <details>
             <summary>Mi serve un account?</summary>
-            <p>No. Puoi usare tutta l’app senza accedere. Se vuoi, puoi accedere con Apple o Google in <strong>Profilo → Account</strong>. In ogni caso, i tuoi viaggi non vengono caricati da nessuna parte.</p>
+            <p>No. Puoi pianificare tutto il viaggio senza accedere. L’account serve solo per condividere un viaggio o salvarne una copia: accedi con Apple o Google (su Android con Google) in <strong>Profilo</strong>.</p>
           </details>
           <details>
             <summary>Dove vengono salvati i miei viaggi?</summary>
-            <p>Solo sul tuo telefono. I viaggi non vengono sincronizzati tra dispositivi e, se elimini l’app, elimini anche i tuoi viaggi.</p>
+            <p>Sul tuo telefono. Se accedi, in <strong>Profilo</strong> puoi salvare una copia nel tuo account: viene salvata nel cloud, sul nostro server nell’UE, senza foto né impostazioni. Su un altro telefono, iPhone o Android, accedi con lo stesso account e recupera la tua copia. La copia non si aggiorna da sola: salvala di nuovo quando cambi il viaggio. Se elimini l’app senza copia, il viaggio viene eliminato.</p>
+          </details>
+          <details>
+            <summary>Posso organizzare il viaggio con chi viaggia con me?</summary>
+            <p>Sì. In <strong>Il mio viaggio</strong>, apri i tuoi compagni di viaggio, tocca <strong>Invita</strong> e accedi. Scegli se chi si unisce potrà modificare il viaggio o solo vederlo e invia il link o il codice; funziona su iPhone e Android. Quello che cambia ognuno arriva agli altri.</p>
           </details>
           <details>
             <summary>Funziona senza connessione a internet?</summary>
@@ -178,8 +249,8 @@
             <p>In <strong>Esplora</strong>, apri un luogo e tocca <strong>Aggiungi al mio itinerario</strong>. In <strong>I miei itinerari</strong>, Nippon2Go raggruppa i tuoi luoghi per città e distanza e li distribuisce in giorni in base al ritmo che scegli in <strong>Il tuo ritmo in tutte le città</strong> (Rilassato, Equilibrato o Intenso). Puoi modificare i tempi di visita e poi aggiungere l’itinerario al tuo programma. Orari e distanze sono stime, quindi controlla gli orari di apertura e i trasporti prima di andare.</p>
           </details>
           <details>
-            <summary>Come aggiungo i miei programmi al Calendario dell’iPhone?</summary>
-            <p>In <strong>Il mio viaggio</strong>, tocca <strong>Aggiungi l’itinerario al calendario</strong>, controlla gli eventi e conferma. Nippon2Go chiede solo il permesso di aggiungere eventi. Non può leggere il tuo calendario.</p>
+            <summary>Come aggiungo i miei programmi al calendario del telefono?</summary>
+            <p>In <strong>Il mio viaggio</strong>, tocca <strong>Aggiungi l’itinerario al calendario</strong>, controlla gli eventi e conferma. La prima volta, consenti l’accesso al calendario. I programmi vengono aggiunti con l’ora del Giappone.</p>
           </details>
           <details>
             <summary>Posso prenotare hotel e attività nell’app?</summary>
@@ -191,7 +262,7 @@
           </details>
           <details>
             <summary>Come esco dall’account o lo elimino?</summary>
-            <p>Per uscire, vai in <strong>Profilo → Account → Esci</strong>: la sessione si chiude e i tuoi viaggi restano. Per eliminare il tuo account, vai in <strong>Profilo → Account → Elimina account</strong>: l’app rimuove il proprio accesso al tuo account Apple o Google e tutto ciò che conservava per l’account sul tuo telefono. I tuoi viaggi restano sul telefono finché non elimini l’app.</p>
+            <p>Per uscire, vai in <strong>Profilo → Account → Esci</strong>: i tuoi viaggi restano sul telefono. Per eliminare il tuo account, tocca <strong>Elimina account</strong> in <strong>Profilo</strong> e conferma: i tuoi dati sul nostro server vengono eliminati (la tua copia e il tuo nome per il gruppo) ed esci dai viaggi condivisi; i viaggi dei tuoi compagni restano loro. Il tuo viaggio resta sul telefono. Puoi farlo anche senza aprire l’app su <a href="elimina-account/">nippon2go.com/it/elimina-account/</a>.</p>
           </details>
         </div>
       </div>
@@ -254,6 +325,8 @@
         <a href="https://play.google.com/store/apps/details?id=com.nippon2go.app&amp;referrer=utm_source%3Dnippon2go.com%26utm_medium%3Dweb%26utm_campaign%3Dsite-it-footer" target="_blank" rel="noopener">Google Play</a>
         <a href="privacy/">Informativa sulla privacy</a>
         <a href="mailto:carlos@nippon2go.com">Contatti</a>
+        <a href="https://www.instagram.com/nippon2go_en/" target="_blank" rel="me noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@nippon2go_en" target="_blank" rel="me noopener">TikTok</a>
         <a href="/es/" hreflang="es" lang="es">Español</a>
         <a href="/" hreflang="en" lang="en">English</a>
         <a href="/fr/" hreflang="fr" lang="fr">Français</a>

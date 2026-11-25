@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nippon2Go – 日本旅遊行程規劃 App</title>
-  <meta name="description" content="規劃你的日本之旅：125 個以上的精選地點、配合你步調的每日行程、預訂連結，以及出發前的行李清單。Nippon2Go 的使用說明與客服。">
-  <meta property="og:title" content="Nippon2Go – 日本旅遊行程規劃 App">
+  <title>免費日本自由行行程規劃 App｜iPhone・Android｜Nippon2Go</title>
+  <meta name="description" content="挑選東京、京都、大阪等 7 個城市想去的景點，App 會算出每個城市待幾天，並排好每天的路線。iPhone 和 Android 免費下載。">
+  <meta property="og:title" content="免費日本自由行行程規劃 App｜iPhone・Android｜Nippon2Go">
   <meta property="og:description" content="精選地點，加上配合你步調的每日行程。全都在一個 App 裡。">
   <meta property="og:image" content="https://nippon2go.com/og-image.png">
   <meta property="og:url" content="https://nippon2go.com/zh-hant/">
@@ -25,14 +25,81 @@
   <link rel="apple-touch-icon" href="../icon.png">
   <link rel="stylesheet" href="../style.css">
   <script>document.documentElement.classList.add('js');</script>
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-    (function () {
-        var script = document.createElement("script");
-        script.async = 1;
-        script.setAttribute("data-cmp-ab","2");
+  <script>
+    // Travelpayouts (affiliate network): loaded once the page has finished, so it doesn't slow it down.
+    window.addEventListener('load', function () {
+      var load = function () {
+        var script = document.createElement('script');
+        script.async = true;
+        script.setAttribute('data-cmp-ab', '2');
         script.src = 'https://emrldtp.com/NTkwMjc3.js?t=590277';
         document.head.appendChild(script);
-    })();
+      };
+      if ('requestIdleCallback' in window) { requestIdleCallback(load, { timeout: 4000 }); } else { setTimeout(load, 2000); }
+    });
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nippon2go.com/#org",
+      "name": "Nippon2Go",
+      "url": "https://nippon2go.com/",
+      "logo": "https://nippon2go.com/icon.png",
+      "email": "carlos@nippon2go.com",
+      "sameAs": [
+        "https://apps.apple.com/app/id6818258413",
+        "https://play.google.com/store/apps/details?id=com.nippon2go.app",
+        "https://www.instagram.com/nippon2go_/",
+        "https://www.instagram.com/nippon2go_en/",
+        "https://www.tiktok.com/@nippon2go",
+        "https://www.tiktok.com/@nippon2go_en"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nippon2go.com/zh-hant/#website",
+      "url": "https://nippon2go.com/zh-hant/",
+      "name": "Nippon2Go",
+      "inLanguage": "zh-Hant",
+      "publisher": {
+        "@id": "https://nippon2go.com/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://nippon2go.com/#app",
+      "name": "Nippon2Go",
+      "description": "免費的日本自由行行程規劃 App：東京、京都、大阪、奈良、鎌倉、橫濱、廣島 125 個以上的精選地點，每個城市的天數、每日路線、預訂連結、行前清單與共享行程。",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "iOS 17.0 or later, Android",
+      "inLanguage": [
+        "en",
+        "es",
+        "fr",
+        "de",
+        "it",
+        "ko",
+        "zh-Hant"
+      ],
+      "image": "https://nippon2go.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "installUrl": [
+        "https://apps.apple.com/app/id6818258413",
+        "https://play.google.com/store/apps/details?id=com.nippon2go.app"
+      ],
+      "publisher": {
+        "@id": "https://nippon2go.com/#org"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -78,7 +145,7 @@
               <span><small>立即下載</small>Google Play</span>
             </a>
           </div>
-          <span class="pill">iPhone（iOS 17 以上）· Android</span>
+          <span class="pill">免費 · iPhone（iOS 17 以上）· Android</span>
         </div>
         <div class="hero-phones">
           <figure class="phone phone-back"><img src="../screens/zh-hant/my-routes.jpg" width="539" height="1170" alt="我的路線：每個城市的預估天數和參觀地點數"></figure>
@@ -145,12 +212,12 @@
           <div class="card">
             <div class="emoji" aria-hidden="true">📅</div>
             <h3>每一天的旅程</h3>
-            <p>每天都有可以編輯的行程表，還能以日本時間加入 iPhone 行事曆。</p>
+            <p>每天都有可以編輯的行程表，還能以日本時間加入手機行事曆。</p>
           </div>
           <div class="card">
             <div class="emoji" aria-hidden="true">🔒</div>
             <h3>從設計之初就重視隱私</h3>
-            <p>不需要帳號。你的旅程只存在你的手機上。提供 7 種語言。</p>
+            <p>規劃旅程不需要帳號：旅程存在你的手機上，只有分享或備份時才需要登入。提供 7 種語言。</p>
           </div>
         </div>
       </div>
@@ -163,11 +230,15 @@
         <div class="faq">
           <details>
             <summary>需要帳號嗎？</summary>
-            <p>不需要。不登入也能使用 App 的所有功能。如果想登入，可以在<strong>個人檔案 → 帳號</strong>使用 Apple 或 Google 登入。無論是否登入，你的旅程都不會上傳到任何地方。</p>
+            <p>不需要。不登入也能規劃整趟旅程。只有分享旅程或備份副本時才需要帳號：在<strong>個人檔案</strong>使用 Apple 或 Google 登入（Android 使用 Google）。</p>
           </details>
           <details>
             <summary>我的旅程存在哪裡？</summary>
-            <p>只存在你的手機上。旅程不會在裝置之間同步，刪除 App 也會一併刪除你的旅程。</p>
+            <p>存在你的手機上。登入後，可在<strong>個人檔案</strong>把副本備份到你的帳號：副本會存到雲端，也就是我們位於歐盟的伺服器，不含照片和設定。在另一支手機（iPhone 或 Android）用同一個帳號登入，再還原你的備份即可。副本不會自動更新：修改旅程後請再儲存一次。如果沒有副本就刪除 App，旅程也會一起刪除。</p>
+          </details>
+          <details>
+            <summary>可以和旅伴一起規劃行程嗎？</summary>
+            <p>可以。在<strong>我的旅程</strong>打開旅伴，點<strong>邀請</strong>並登入。選擇加入的人可以編輯行程還是僅檢視，再傳送連結或代碼；iPhone 和 Android 都能使用。每個人的修改都會同步給其他人。</p>
           </details>
           <details>
             <summary>沒有網路也能用嗎？</summary>
@@ -178,8 +249,8 @@
             <p>在<strong>探索</strong>中打開一個地點，點<strong>加入我的路線</strong>。在<strong>我的路線</strong>中，Nippon2Go 會依城市和距離將你的地點分組，並根據你在<strong>所有城市的旅行步調</strong>選擇的步調（輕鬆、適中或緊湊）分配到每一天。你可以調整停留時間，再把路線加入你的行程。時間和距離都是估計值，出發前請先確認營業時間和交通方式。</p>
           </details>
           <details>
-            <summary>如何把安排加入 iPhone 行事曆？</summary>
-            <p>在<strong>我的旅程</strong>中點<strong>將行程加入行事曆</strong>，檢查活動內容後確認即可。Nippon2Go 只會請求新增活動的權限，無法讀取你的行事曆。</p>
+            <summary>如何把安排加入手機行事曆？</summary>
+            <p>在<strong>我的旅程</strong>中點<strong>將行程加入行事曆</strong>，檢查活動內容後確認即可。第一次使用時，請允許存取行事曆。行程會以日本時間加入。</p>
           </details>
           <details>
             <summary>可以在 App 裡預訂飯店和活動嗎？</summary>
@@ -191,7 +262,7 @@
           </details>
           <details>
             <summary>如何登出或刪除帳號？</summary>
-            <p>要登出，請前往<strong>個人檔案 → 帳號 → 登出</strong>。這會結束登入狀態，並保留你的旅程。要刪除帳號，請前往<strong>個人檔案 → 帳號 → 刪除帳號</strong>：App 會移除它對你 Apple 或 Google 帳號的存取權，並刪除它在你手機上為這個帳號保存的所有資料。在你刪除 App 之前，你的旅程都會留在手機上。</p>
+            <p>要登出，請前往<strong>個人檔案 → 帳號 → 登出</strong>，你的旅程會留在手機上。要刪除帳號，請在<strong>個人檔案</strong>點<strong>刪除帳號</strong>並確認：我們伺服器上的資料（你的備份和在群組中顯示的名字）會被刪除，你也會退出共用的旅程；旅伴的旅程仍屬於他們。你的旅程會保留在手機上。也可以不開啟 App，直接在 <a href="delete-account/">nippon2go.com/zh-hant/delete-account/</a> 刪除。</p>
           </details>
         </div>
       </div>
@@ -254,6 +325,8 @@
         <a href="https://play.google.com/store/apps/details?id=com.nippon2go.app&amp;referrer=utm_source%3Dnippon2go.com%26utm_medium%3Dweb%26utm_campaign%3Dsite-zh-footer" target="_blank" rel="noopener">Google Play</a>
         <a href="privacy/">隱私權政策</a>
         <a href="mailto:carlos@nippon2go.com">聯絡我們</a>
+        <a href="https://www.instagram.com/nippon2go_en/" target="_blank" rel="me noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@nippon2go_en" target="_blank" rel="me noopener">TikTok</a>
         <a href="/es/" hreflang="es" lang="es">Español</a>
         <a href="/" hreflang="en" lang="en">English</a>
         <a href="/fr/" hreflang="fr" lang="fr">Français</a>

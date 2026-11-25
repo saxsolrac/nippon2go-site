@@ -435,3 +435,8 @@ button.button { border: 0; font: inherit; font-weight: 600; cursor: pointer; }
 .delete-status { margin: 16px 0 0; font-weight: 600; }
 .delete-status.error { color: var(--accent); }
 .delete-status.done { color: var(--navy); }
+
+/* Home: links to the guides */
+.guide-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.guide-links a { display: inline-block; padding: 10px 16px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); color: var(--text); text-decoration: none; font-weight: 500; }
+.guide-links a.it { background: var(--accent-soft); border-color: transparent; color: var(--accent); font-weight: 600; }

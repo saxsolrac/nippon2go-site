@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nippon2Go – 일본 여행 플래너</title>
-  <meta name="description" content="일본 여행을 계획해 보세요. 엄선한 장소 125곳 이상, 내 여행 속도에 맞춘 날짜별 일정, 예약 링크, 출발 전 준비물 목록까지 담았어요. Nippon2Go 도움말과 고객 지원도 여기에서 확인하세요.">
-  <meta property="og:title" content="Nippon2Go – 일본 여행 플래너">
+  <title>일본 여행 일정 짜기 무료 앱 – 여행 플래너 | Nippon2Go</title>
+  <meta name="description" content="도쿄·교토·오사카 등 7개 도시에서 가고 싶은 곳을 고르면 도시별 일수를 계산하고 날마다 경로를 짜 줘요. iPhone·Android 무료.">
+  <meta property="og:title" content="일본 여행 일정 짜기 무료 앱 – 여행 플래너 | Nippon2Go">
   <meta property="og:description" content="엄선한 장소와 내 여행 속도에 맞춘 날짜별 일정. 앱 하나로 모두 해결하세요.">
   <meta property="og:image" content="https://nippon2go.com/og-image.png">
   <meta property="og:url" content="https://nippon2go.com/ko/">
@@ -25,14 +25,81 @@
   <link rel="apple-touch-icon" href="../icon.png">
   <link rel="stylesheet" href="../style.css">
   <script>document.documentElement.classList.add('js');</script>
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-    (function () {
-        var script = document.createElement("script");
-        script.async = 1;
-        script.setAttribute("data-cmp-ab","2");
+  <script>
+    // Travelpayouts (affiliate network): loaded once the page has finished, so it doesn't slow it down.
+    window.addEventListener('load', function () {
+      var load = function () {
+        var script = document.createElement('script');
+        script.async = true;
+        script.setAttribute('data-cmp-ab', '2');
         script.src = 'https://emrldtp.com/NTkwMjc3.js?t=590277';
         document.head.appendChild(script);
-    })();
+      };
+      if ('requestIdleCallback' in window) { requestIdleCallback(load, { timeout: 4000 }); } else { setTimeout(load, 2000); }
+    });
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nippon2go.com/#org",
+      "name": "Nippon2Go",
+      "url": "https://nippon2go.com/",
+      "logo": "https://nippon2go.com/icon.png",
+      "email": "carlos@nippon2go.com",
+      "sameAs": [
+        "https://apps.apple.com/app/id6818258413",
+        "https://play.google.com/store/apps/details?id=com.nippon2go.app",
+        "https://www.instagram.com/nippon2go_/",
+        "https://www.instagram.com/nippon2go_en/",
+        "https://www.tiktok.com/@nippon2go",
+        "https://www.tiktok.com/@nippon2go_en"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nippon2go.com/ko/#website",
+      "url": "https://nippon2go.com/ko/",
+      "name": "Nippon2Go",
+      "inLanguage": "ko",
+      "publisher": {
+        "@id": "https://nippon2go.com/#org"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://nippon2go.com/#app",
+      "name": "Nippon2Go",
+      "description": "일본 여행 일정을 짜는 무료 앱: 도쿄, 교토, 오사카, 나라, 가마쿠라, 요코하마, 히로시마의 엄선한 장소 125곳 이상, 도시별 일수, 날짜별 경로, 예약 링크, 준비물 목록, 여행 공유.",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "iOS 17.0 or later, Android",
+      "inLanguage": [
+        "en",
+        "es",
+        "fr",
+        "de",
+        "it",
+        "ko",
+        "zh-Hant"
+      ],
+      "image": "https://nippon2go.com/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "installUrl": [
+        "https://apps.apple.com/app/id6818258413",
+        "https://play.google.com/store/apps/details?id=com.nippon2go.app"
+      ],
+      "publisher": {
+        "@id": "https://nippon2go.com/#org"
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -78,7 +145,7 @@
               <span><small>다운로드하기</small>Google Play</span>
             </a>
           </div>
-          <span class="pill">iPhone (iOS 17+) · Android</span>
+          <span class="pill">무료 · iPhone (iOS 17+) · Android</span>
         </div>
         <div class="hero-phones">
           <figure class="phone phone-back"><img src="../screens/ko/my-routes.jpg" width="539" height="1170" alt="나의 경로: 도시별 예상 일수와 방문 장소 수"></figure>
@@ -145,12 +212,12 @@
           <div class="card">
             <div class="emoji" aria-hidden="true">📅</div>
             <h3>하루하루 정리된 여행</h3>
-            <p>수정할 수 있는 날짜별 일정표를 일본 시간 기준으로 iPhone 캘린더에 추가할 수 있어요.</p>
+            <p>수정할 수 있는 날짜별 일정표를 일본 시간 기준으로 휴대폰 캘린더에 추가할 수 있어요.</p>
           </div>
           <div class="card">
             <div class="emoji" aria-hidden="true">🔒</div>
             <h3>처음부터 개인정보 보호를 생각했어요</h3>
-            <p>계정이 없어도 돼요. 여행 정보는 내 휴대폰에만 저장돼요. 7개 언어를 지원해요.</p>
+            <p>계정 없이도 여행을 계획할 수 있어요. 여행은 내 휴대폰에 저장되고, 공유하거나 백업할 때만 로그인하면 돼요. 7개 언어를 지원해요.</p>
           </div>
         </div>
       </div>
@@ -163,11 +230,15 @@
         <div class="faq">
           <details>
             <summary>계정이 꼭 있어야 하나요?</summary>
-            <p>아니요. 로그인하지 않아도 앱의 모든 기능을 쓸 수 있어요. 원하면 <strong>프로필 → 계정</strong>에서 Apple이나 Google로 로그인할 수 있어요. 로그인하든 하지 않든 여행 정보는 어디에도 업로드되지 않아요.</p>
+            <p>아니요. 로그인하지 않아도 여행 전체를 계획할 수 있어요. 계정은 여행을 공유하거나 사본을 백업할 때만 필요해요. <strong>프로필</strong>에서 Apple이나 Google로 로그인하세요(Android는 Google).</p>
           </details>
           <details>
             <summary>여행은 어디에 저장되나요?</summary>
-            <p>휴대폰에만 저장돼요. 여행은 기기 간에 동기화되지 않으며, 앱을 삭제하면 여행도 함께 삭제돼요.</p>
+            <p>내 휴대폰에 저장돼요. 로그인하면 <strong>프로필</strong>에서 계정에 사본을 백업할 수 있어요. 사진과 설정을 뺀 사본이 클라우드, 즉 EU에 있는 우리 서버에 저장돼요. 다른 휴대폰(iPhone 또는 Android)에서는 같은 계정으로 로그인하고 백업을 복원하세요. 사본은 자동으로 업데이트되지 않으니 여행을 바꾸면 다시 저장하세요. 사본 없이 앱을 삭제하면 여행도 삭제돼요.</p>
+          </details>
+          <details>
+            <summary>함께 여행하는 사람과 같이 계획할 수 있나요?</summary>
+            <p>네. <strong>나의 여행</strong>에서 동행 목록을 열고 <strong>초대</strong>를 누른 뒤 로그인하세요. 참여하는 사람이 여행을 편집할 수 있을지, 보기만 할지 고른 다음 링크나 코드를 보내세요. iPhone과 Android 모두에서 돼요. 각자 바꾼 내용은 다른 사람에게도 전해져요.</p>
           </details>
           <details>
             <summary>인터넷 연결 없이도 쓸 수 있나요?</summary>
@@ -178,8 +249,8 @@
             <p><strong>둘러보기</strong>에서 장소를 열고 <strong>나의 경로에 추가</strong>를 누르세요. <strong>나의 경로</strong>에서는 Nippon2Go가 장소를 도시와 거리에 따라 묶고, <strong>모든 도시의 여행 속도</strong>에서 고른 속도(여유롭게, 적당하게, 알차게)에 맞춰 날짜별로 나눠요. 방문 시간을 조정한 다음 경로를 일정에 추가할 수 있어요. 시간과 거리는 예상치이니, 가기 전에 영업시간과 교통편을 꼭 확인하세요.</p>
           </details>
           <details>
-            <summary>일정을 iPhone 캘린더에 어떻게 추가하나요?</summary>
-            <p><strong>나의 여행</strong>에서 <strong>여행 일정을 캘린더에 추가</strong>를 누르고, 이벤트를 확인한 뒤 승인하세요. Nippon2Go는 이벤트를 추가할 권한만 요청해요. 캘린더 내용을 읽을 수는 없어요.</p>
+            <summary>일정을 휴대폰 캘린더에 어떻게 추가하나요?</summary>
+            <p><strong>나의 여행</strong>에서 <strong>여행 일정을 캘린더에 추가</strong>를 누르고, 이벤트를 확인한 뒤 승인하세요. 처음에는 캘린더 접근을 허용해야 해요. 일정은 일본 시간으로 추가돼요.</p>
           </details>
           <details>
             <summary>앱에서 호텔과 액티비티를 예약할 수 있나요?</summary>
@@ -191,7 +262,7 @@
           </details>
           <details>
             <summary>로그아웃하거나 계정을 삭제하려면 어떻게 하나요?</summary>
-            <p>로그아웃하려면 <strong>프로필 → 계정 → 로그아웃</strong>으로 가세요. 로그인 상태만 해제되고 여행은 그대로 남아요. 계정을 삭제하려면 <strong>프로필 → 계정 → 계정 삭제</strong>로 가세요. 앱이 Apple 또는 Google 계정에 대한 접근 권한을 해제하고, 계정과 관련해 휴대폰에 보관하던 정보를 모두 지워요. 여행은 앱을 삭제할 때까지 휴대폰에 남아 있어요.</p>
+            <p>로그아웃하려면 <strong>프로필 → 계정 → 로그아웃</strong>으로 가세요. 여행은 휴대폰에 그대로 남아요. 계정을 삭제하려면 <strong>프로필</strong>에서 <strong>계정 삭제</strong>를 누르고 확인하세요. 서버에 있는 데이터(백업과 그룹에 보이는 이름)가 삭제되고 공유된 여행에서도 나가게 돼요. 동행의 여행은 그대로 남아요. 내 여행은 휴대폰에 그대로 있어요. 앱을 열지 않고 <a href="delete-account/">nippon2go.com/ko/delete-account/</a>에서도 삭제할 수 있어요.</p>
           </details>
         </div>
       </div>
@@ -254,6 +325,8 @@
         <a href="https://play.google.com/store/apps/details?id=com.nippon2go.app&amp;referrer=utm_source%3Dnippon2go.com%26utm_medium%3Dweb%26utm_campaign%3Dsite-ko-footer" target="_blank" rel="noopener">Google Play</a>
         <a href="privacy/">개인정보 처리방침</a>
         <a href="mailto:carlos@nippon2go.com">문의</a>
+        <a href="https://www.instagram.com/nippon2go_en/" target="_blank" rel="me noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@nippon2go_en" target="_blank" rel="me noopener">TikTok</a>
         <a href="/es/" hreflang="es" lang="es">Español</a>
         <a href="/" hreflang="en" lang="en">English</a>
         <a href="/fr/" hreflang="fr" lang="fr">Français</a>
