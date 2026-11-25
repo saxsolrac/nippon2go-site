@@ -257,6 +257,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/"/>
   </url>
   <url>
@@ -264,6 +267,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/"/>
   </url>
   <url>
@@ -271,6 +307,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/tokio/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/tokio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/tokyo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/tokyo/"/>
   </url>
   <url>
@@ -278,6 +317,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/tokio/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/tokio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/tokyo/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/tokyo/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/tokio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/tokio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/tokyo/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/tokio/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/tokio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/tokio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/tokyo/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/tokyo/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/tokio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/tokyo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/tokio/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/tokyo/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/tokyo/"/>
   </url>
   <url>
@@ -285,6 +357,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kioto/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kyoto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kyoto/"/>
   </url>
   <url>
@@ -292,6 +367,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kioto/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kyoto/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/kyoto/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kioto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kyoto/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/kyoto/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kioto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kyoto/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/kyoto/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kioto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kyoto/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kyoto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kyoto/"/>
   </url>
   <url>
@@ -299,6 +407,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/osaka/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/osaka/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/osaka/"/>
   </url>
   <url>
@@ -306,6 +417,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/osaka/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/osaka/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/osaka/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/osaka/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/osaka/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/osaka/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/osaka/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/osaka/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/osaka/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/osaka/"/>
   </url>
   <url>
@@ -313,6 +457,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/nara/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/nara/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/nara/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/nara/"/>
   </url>
   <url>
@@ -320,6 +467,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/nara/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/nara/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/nara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/nara/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/nara/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/nara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/nara/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/nara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/nara/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/nara/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/nara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/nara/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/nara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/nara/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/nara/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/nara/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/nara/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/nara/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/nara/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/nara/"/>
   </url>
   <url>
@@ -327,6 +507,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/hiroshima/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/hiroshima/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/hiroshima/"/>
   </url>
   <url>
@@ -334,6 +517,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/hiroshima/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/hiroshima/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/hiroshima/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/hiroshima/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/hiroshima/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/hiroshima/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/hiroshima/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/hiroshima/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/hiroshima/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/hiroshima/"/>
   </url>
   <url>
@@ -341,6 +557,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kamakura/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kamakura/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kamakura/"/>
   </url>
   <url>
@@ -348,6 +567,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kamakura/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kamakura/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/kamakura/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kamakura/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/kamakura/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kamakura/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/kamakura/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/kamakura/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/kamakura/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/kamakura/"/>
   </url>
   <url>
@@ -355,6 +607,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/yokohama/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/yokohama/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/yokohama/"/>
   </url>
   <url>
@@ -362,6 +617,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/yokohama/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/yokohama/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/yokohama/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/yokohama/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/yokohama/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/yokohama/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/yokohama/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/yokohama/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/yokohama/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/yokohama/"/>
   </url>
   <url>
@@ -369,6 +657,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-10-dias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-10-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-10-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-10-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-10-giorni/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-10-days/"/>
   </url>
   <url>
@@ -376,6 +667,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-10-dias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-10-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-10-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-10-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-10-giorni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-10-days/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/japon-10-jours/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-10-dias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-10-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-10-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-10-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-10-giorni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-10-days/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/japan-10-tage/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-10-dias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-10-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-10-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-10-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-10-giorni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-10-days/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/giappone-10-giorni/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-10-dias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-10-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-10-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-10-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-10-giorni/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-10-days/"/>
   </url>
   <url>
@@ -383,6 +707,9 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-15-dias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-15-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-15-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-15-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-15-giorni/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-15-days/"/>
   </url>
   <url>
@@ -390,6 +717,39 @@
     <lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-15-dias/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-15-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-15-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-15-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-15-giorni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-15-days/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/fr/guides/japon-15-jours/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-15-dias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-15-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-15-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-15-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-15-giorni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-15-days/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/de/reisefuehrer/japan-15-tage/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-15-dias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-15-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-15-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-15-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-15-giorni/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-15-days/"/>
+  </url>
+  <url>
+    <loc>https://nippon2go.com/it/guide/giappone-15-giorni/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nippon2go.com/es/guias/japon-15-dias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nippon2go.com/guides/japan-15-days/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nippon2go.com/fr/guides/japon-15-jours/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://nippon2go.com/de/reisefuehrer/japan-15-tage/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://nippon2go.com/it/guide/giappone-15-giorni/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://nippon2go.com/guides/japan-15-days/"/>
   </url>
 </urlset>
